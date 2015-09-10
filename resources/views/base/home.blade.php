@@ -4,8 +4,8 @@
 <section id="large-header" class="top-section hero ming large-header">
   <div class="row">
     <div class="small-12 columns text-center">
-      <h2 class="text-center">The Full Stack Web School</h2>
-      <h3 class="subheader">Learn all the tools you need to put together any website or web app imaginable</h3>
+      <h2 class="text-center">Ready to become a full stack web developer?</h2>
+      <h3 class="subheader">One school. One price. Everything you need.</h3>
       <ul class="course-list">
         <li><a href="#">HTML</a></li>
         <li><a href="#">CSS</a></li>
@@ -37,39 +37,36 @@
       </ul>
       <h3>Yes, you will build projects that go over all of these technologies</h3>
       <h2><a href="https://courses.makerscabin.com/purchase/module/web" class="button round large">Start Learning Today for Just $50</a></h2>
-      <h3>The Full Stack Web School Is Now Open</h3>
     </div>
   </div>
 </section>
-<section class="content home-content">
+<section class="quick">
+	<div class="row">
+		<div class="small-12 medium-4 content columns">
+			<h3>Learn at your own pace</h3>
+			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning.</p>
+		</div>
+		<div class="small-12 medium-4 content columns">
+			<h3>Learn at your own pace</h3>
+			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning.</p>
+		</div>
+		<div class="small-12 medium-4 content columns">
+			<h3>Community Learning</h3>
+			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning.</p>
+		</div>
+	</div>
+</section>
+<section class="content sublime-bg">
   <div class="row">
-    <div class="small-12 columns">
-      <h2>Learning Everything is Not Easy</h2>
-    </div>
-    <div class="small-12 columns medium-8">
+    <div class="small-12 medium-8 medium-offset-2 columns">
+      <h2>Become a Full Stack Web Developer</h2>
       <p>Deciding that it is time to build out the idea in your head or start a career as a web person sounds great until you get started. That is when you realize there are a million things you do not know.</p>
       <p>It can be frustrating because everywhere you go to look for help pulls you into a different direction. Developers are supposed to learn design and designers are supposed to learn development. Both are supposed to know how to work in the command line and deploy changes to the server.</p>
       <p>You can pick up all of these things across a ton of different resources, but it can be hard putting all of the pieces together.</p>
-      <p>The Full Stack Web School will show you how all of the pieces come together along with how to make them work.</p>
-      <p>When you are done with the courses you will have a complete understanding of what it takes to get an online marketplace out the door. With this knowledge you can go on to design and build anything your mind can come up with.</p>
-      <hr class="short-style">
+      <p>The Full Stack Web School will show you how all of these pieces come together along with how to make them work.</p>
+      <p>When you are done with the courses you will have a complete understanding of what it takes to get a number of different projects out the door. With this knowledge you can go on to design and build anything your mind can come up with.</p>
     </div>
     <div class="small-12 columns medium-4 sidebar">
-      <p>The school opened up in August with videos being released every week day.</p>
-      <p>Besides courses focusing on specific technologies (HTML, CSS, PHP, etc.), we are also building 3 separate projects that will show the complete developer&rsquo;s workflow.</p>
-      <h3>What Are We Building?</h3>
-      <p>A Blog<br>Everyone needs a blog. This is a good starter project that will expose you to a number of different technologies.</p>
-      <p>A Productivity App<br>The next project you will dive into will be a great todo list application.</p>
-      <p>A Digital Marketplace<br>sA new digital online marketplace where anyone can sell their digital wares. This marketplace will handle payments, asset hosting, customer marketing, and more.</p>
-      <p>This will not be a fake marketplace used just for teaching, but an actual one that I will build a business around. This is an extensive 3 month project.</p>
-      <!--
-      <p>Below is the timeline for the digital marketplace.</p>
-      <p><strong>August</strong>: Designing the app, customer feedback, and iteration. We will design both the website and the web app, and get customer feedback along the way to iterate and be sure we have what we need for launch.</p>
-      <p>You will learn best design practices and theories, Sketch, how to get user feedback you can use, and how to put it all together to create a design that achieves your goals.</p>
-      <p><strong>September</strong>: Designing the backend and developing the beta. We will architect the app and understand what will be needed to make it a reality. Along the way we will develop a beta version using PHP/Laravel, MySQL, and other technologies.</p>
-      <p><strong>October</strong>: Preparing for launch. Adding version 1 features, getting the proper server infrastructure in place, and setting up a marketplace payment system.</p>
-      <p><strong>November</strong>: Public launch and celebration.</p>
-      -->
     </div>
   </div>
 </section>
@@ -78,7 +75,7 @@
     <div class="small-12 columns">
       <h2>Join over 1000+ makers that are learning with Makers Cabin</h2>
       <ul class="logo-list">
-        <li><img alt="Dropbox" title="Dropbox" src="/src/img/logos/dropbox.png"></li>
+        <li><img alt="Dropbox" title="Dropbox" src="/assets/img/logos/dropbox.png"></li>
         <li><img alt="Twitter" title="Twitter" src="/assets/img/logos/twitter.png"></li>
         <li><img alt="Facebook" title="Facebook" src="/assets/img/logos/facebook.png"></li>
         <li><img alt="Instagram" title="Instagram" src="/assets/img/logos/instagram.png"></li>

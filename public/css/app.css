@@ -124,7 +124,7 @@ select {
 
 .row {
   margin: 0 auto;
-  max-width: 66.66667rem;
+  max-width: 100%;
   width: 100%; }
   .row:before, .row:after {
     content: " ";
@@ -139,7 +139,7 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row .row {
-    margin: 0 -1.38889rem;
+    margin: 0 -0.83333rem;
     max-width: none;
     width: auto; }
     .row .row:before, .row .row:after {
@@ -159,8 +159,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 1.38889rem;
-  padding-right: 1.38889rem;
+  padding-left: 0.83333rem;
+  padding-right: 0.83333rem;
   width: 100%;
   float: left; }
 
@@ -272,8 +272,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 1.38889rem;
-    padding-right: 1.38889rem;
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
     float: left; }
   .small-1 {
     width: 8.33333%; }
@@ -357,8 +357,8 @@ select {
     margin-right: 0; }
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 1.38889rem;
-    padding-right: 1.38889rem;
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
     float: left; } }
 
 @media only screen and (min-width: 40.063em) {
@@ -461,8 +461,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 1.38889rem;
-    padding-right: 1.38889rem;
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
     float: left; }
   .medium-1 {
     width: 8.33333%; }
@@ -546,8 +546,8 @@ select {
     margin-right: 0; }
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 1.38889rem;
-    padding-right: 1.38889rem;
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -746,8 +746,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 1.38889rem;
-    padding-right: 1.38889rem;
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
     float: left; }
   .large-1 {
     width: 8.33333%; }
@@ -831,8 +831,8 @@ select {
     margin-right: 0; }
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 1.38889rem;
-    padding-right: 1.38889rem;
+    padding-left: 0.83333rem;
+    padding-right: 0.83333rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -954,7 +954,7 @@ select {
         background: rgba(51, 51, 51, 0.5); }
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
-      padding: 1.38889rem; }
+      padding: 0.83333rem; }
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
         background: rgba(51, 51, 51, 0.75);
         display: block; }
@@ -3949,7 +3949,7 @@ button:focus {
     .reveal-modal {
       left: 0;
       margin: 0 auto;
-      max-width: 66.66667rem;
+      max-width: 100%;
       right: 0;
       width: 80%; } }
   @media only screen and (min-width: 40.063em) {
@@ -3965,35 +3965,35 @@ button:focus {
     .reveal-modal.tiny {
       left: 0;
       margin: 0 auto;
-      max-width: 66.66667rem;
+      max-width: 100%;
       right: 0;
       width: 30%; } }
   @media only screen and (min-width: 40.063em) {
     .reveal-modal.small {
       left: 0;
       margin: 0 auto;
-      max-width: 66.66667rem;
+      max-width: 100%;
       right: 0;
       width: 40%; } }
   @media only screen and (min-width: 40.063em) {
     .reveal-modal.medium {
       left: 0;
       margin: 0 auto;
-      max-width: 66.66667rem;
+      max-width: 100%;
       right: 0;
       width: 60%; } }
   @media only screen and (min-width: 40.063em) {
     .reveal-modal.large {
       left: 0;
       margin: 0 auto;
-      max-width: 66.66667rem;
+      max-width: 100%;
       right: 0;
       width: 70%; } }
   @media only screen and (min-width: 40.063em) {
     .reveal-modal.xlarge {
       left: 0;
       margin: 0 auto;
-      max-width: 66.66667rem;
+      max-width: 100%;
       right: 0;
       width: 95%; } }
   .reveal-modal.full {
@@ -4008,7 +4008,7 @@ button:focus {
       .reveal-modal.full {
         left: 0;
         margin: 0 auto;
-        max-width: 66.66667rem;
+        max-width: 100%;
         right: 0;
         width: 100%; } }
   .reveal-modal.toback {
@@ -4396,17 +4396,17 @@ table {
   .tabs-content > .content {
     display: none;
     float: left;
-    padding: 1.38889rem 0;
+    padding: 0.83333rem 0;
     width: 100%; }
     .tabs-content > .content.active {
       display: block;
       float: none; }
     .tabs-content > .content.contained {
-      padding: 1.38889rem; }
+      padding: 0.83333rem; }
   .tabs-content.vertical {
     display: block; }
     .tabs-content.vertical > .content {
-      padding: 0 1.38889rem; }
+      padding: 0 0.83333rem; }
 
 @media only screen and (min-width: 40.063em) {
   .tabs.vertical {
@@ -4926,7 +4926,7 @@ meta.foundation-mq-topbar {
   .contain-to-grid .top-bar {
     margin-bottom: 0;
     margin: 0 auto;
-    max-width: 66.66667rem; }
+    max-width: 100%; }
   .top-bar-section {
     transition: none 0 0;
     left: 0 !important; }
@@ -6228,6 +6228,23 @@ section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming
 section.ming a:not(.button) {
   border-color: #FFFFFF; }
 
+.orange-bg {
+  background: #F08A24 url("/assets/img/backgrounds/cabin-orange.png") 50% 0 no-repeat fixed;
+  background-size: cover;
+  padding-bottom: 2rem; }
+  .orange-bg h1, .orange-bg h2, .orange-bg h3, .orange-bg h4, .orange-bg a, .orange-bg p, .orange-bg label, .orange-bg li {
+    color: #FFFFFF; }
+  .orange-bg a:not(.button) {
+    border-color: #FFFFFF; }
+
+.sublime-bg {
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0.75) 90%), url("/assets/img/backgrounds/sublime.gif") 50% 0 no-repeat fixed;
+  background-size: cover; }
+  .sublime-bg h1, .sublime-bg h2, .sublime-bg h3, .sublime-bg h4, .sublime-bg a, .sublime-bg p, .sublime-bg label, .sublime-bg li {
+    color: #FFFFFF; }
+  .sublime-bg a:not(.button) {
+    border-color: #FFFFFF; }
+
 .hero {
   background-color: rgba(0, 0, 0, 0.75); }
   .hero h2, .hero h1 {
@@ -6270,8 +6287,8 @@ section.ming a:not(.button) {
 code, code p {
   font-size: 0.77778rem; }
 
-table.highlight {
-  width: 100%; }
+.content {
+  padding: 2rem 0; }
 
 @media only screen and (min-width: 40.063em) {
   .hero {
