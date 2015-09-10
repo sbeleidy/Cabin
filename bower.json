@@ -1,0 +1,18 @@
+{
+  "name": "Makers Cabin",
+  "version": "0.0.0",
+  "authors": [
+    "Scrivs <scrivs@gmail.com>"
+  ],
+  "description": "Bower packages for Makers Cabin marketing site",
+  "license": "MIT",
+  "homepage": "https://makerscabin.com",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_down",
+    "test",
+    "tests"
+  ]
+}

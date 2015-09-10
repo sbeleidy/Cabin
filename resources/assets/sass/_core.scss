@@ -1,0 +1,80 @@
+@mixin white-text {
+	h1, h2, h3, h4, a, p, label, li {color: $white;}
+	a:not(.button) {border-color: $white}
+}
+
+a {
+	transition: 0.2s all linear;
+}
+
+.ming {background: #336E7B url('/assets/img/backgrounds/cabin.png') 50% 0 no-repeat fixed;background-size: cover;}
+section.ming {@include white-text;}
+
+.hero {
+	background-color: rgba($black, 0.75);
+	h2, h1 {
+    	color: $white;
+    	line-height: 1;
+	}
+  	h3, h4 {color: $white;}
+  	.hero-paragraph {margin-top: 1rem;}
+  	.hero-span-list li {font-size: rem-calc(16px)}
+}
+
+.top-section {
+	border-top: none;
+	margin-top: rem-calc(-45);
+	padding-top: 6.5rem;
+}
+
+.course-list {
+	margin-left: 0.05rem;
+	margin-top: 2rem;
+	li {
+		margin-bottom: 1.5rem;
+		margin-right: 0.5rem;
+		margin-left: 0;
+		display: inline-block;
+		a {
+			font-family: $font-family-soft;
+			color: $white;
+			background: transparent;
+			border: 1px solid rgba($white, 0.25);
+			border-radius: 3px;
+			padding: 0.5rem 0.75rem;
+			transition: all 0.2s linear;
+			font-size: 1.2rem;
+			&:hover {
+				background: darken($ming, 10%);
+				border-color: darken($ming, 10%);
+				color: $white;
+			}
+		}
+	}
+}
+
+code, code p {
+	font-size: rem-calc(14);
+}
+
+// gist embed
+
+table.highlight {width: 100%}
+
+@media #{$medium-up} {
+	.hero {
+		padding: 4rem 0;
+    	h1 {
+      		font-size: 6rem;
+    	}
+		h2 {
+			font-size: 4rem;
+		}
+	}
+	.content {
+		h3 {
+			line-height: 1.2;
+		}
+		.video-meta {text-align: center}
+	}
+}
