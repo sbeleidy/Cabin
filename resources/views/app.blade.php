@@ -11,6 +11,7 @@
         <meta name="description" content="Build web apps and learn all the technologies that make them work together.">
         <link href="/assets/img/favicon.png" rel="icon" type="image/x-icon" />
         <link rel="stylesheet" href="/css/app.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
         <!-- Typekit  -->
         <script src="//use.typekit.net/asp8mra.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>

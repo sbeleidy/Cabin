@@ -62,9 +62,10 @@ section.ming {@include white-text;}
 			transition: all 0.2s linear;
 			font-size: 1.2rem;
 			&:hover {
-				background: darken($ming, 10%);
-				border-color: darken($ming, 10%);
+				background: transparent;
+				border-color: $white;
 				color: $white;
+				cursor: default;
 			}
 		}
 	}

@@ -5,6 +5,9 @@
 
     RewriteEngine On
 
+    # WordPress Directories
+    RewriteCond $1 !^(blog)
+
     # Redirect Trailing Slashes If Not A Folder...
     RewriteCond %{REQUEST_FILENAME} !-d
     RewriteRule ^(.*)/$ /$1 [L,R=301]

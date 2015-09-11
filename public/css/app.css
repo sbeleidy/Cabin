@@ -6284,9 +6284,10 @@ section.ming a:not(.button) {
       transition: all 0.2s linear;
       font-size: 1.2rem; }
       .course-list li a:hover {
-        background: #244e57;
-        border-color: #244e57;
-        color: #FFFFFF; }
+        background: transparent;
+        border-color: #FFFFFF;
+        color: #FFFFFF;
+        cursor: default; }
 
 code, code p {
   font-size: 0.77778rem; }

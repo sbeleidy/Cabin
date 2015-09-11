@@ -35,7 +35,7 @@
         <li><a href="#">Nginx</a></li>
         <li><a href="#">Redis</a></li>
       </ul>
-      <h3>Yes, you will build projects that go over all of these technologies. Over 200+ videos and more added every weekday.</h3>
+      <h3>Yes, you will build projects that go over all of these technologies. Over 200+ videos and more added every weekday. Don&rsquo;t know what any of these things mean? No worries because you will learn them all soon enough.</h3>
       <h2><a href="https://courses.makerscabin.com/purchase/module/web" class="button round large">Start Learning Today for Just $50</a></h2>
     </div>
   </div>
@@ -43,14 +43,17 @@
 <section class="quick">
 	<div class="row">
 		<div class="small-12 medium-4 content columns">
+      <h2 class="text-center"><i class="fa fa-hourglass-3"></i></h2>
 			<h3 class="text-center">Learn at your own pace</h3>
 			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning.</p>
 		</div>
 		<div class="small-12 medium-4 content columns">
+      <h2 class="text-center"><i class="fa fa-line-chart"></i></h2>
 			<h3 class="text-center">Great for all skill levels</h3>
 			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning.</p>
 		</div>
 		<div class="small-12 medium-4 content columns">
+      <h2 class="text-center"><i class="fa fa-group"></i></h2>
 			<h3 class="text-center">Community Learning</h3>
 			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning.</p>
 		</div>
@@ -107,9 +110,9 @@
 <section id="large-header" class="hero ming large-header">
   <div class="row">
     <div class="small-12 columns text-center">
-      <h2 class="text-center">Why Is This Just $50?</h2>
-      <h3 class="subheader">Because Online Education Is Broken and Needs to Change</h3>
-      <h3><a href="https://www.makerscabin.com/blog/the-full-stack-web-course/" class="text-link">Read more...</a></h3>
+      <h2 class="text-center">Why is this just $50?</h2>
+      <h3 class="subheader">Because online education is broken and needs to change.</h3>
+      <h3><a href="https://www.makerscabin.com/blog/the-full-stack-web-course/" class="button round large">Read more about the Makers Cabin philosophy...</a></h3>
     </div>
   </div>
 </section>
