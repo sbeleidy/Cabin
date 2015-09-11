@@ -35,6 +35,17 @@ section.ming {@include white-text;}
 	background-size: cover;
 }
 
+.scrivs-bg {
+	background: linear-gradient(90deg, rgba($black, 0.5) 10%, rgba($black, 0.5) 90%), url('/assets/img/backgrounds/scrivs.jpg') 50% 0 no-repeat fixed;
+	background-size: cover;
+	h2, h3, p { color: $white; }
+}
+
+.avatar {
+	border-radius: 100%;
+	max-width: rem-calc(120);
+}
+
 .no-padding {
 	padding: 0 !important;
 }
@@ -164,5 +175,9 @@ code, code p {
 			line-height: 1.2;
 		}
 		.video-meta {text-align: center}
+	}
+	.scrivs-bg {
+		background: $white;
+		h2, h3, p { color: $jet; }
 	}
 }
