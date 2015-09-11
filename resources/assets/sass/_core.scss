@@ -15,15 +15,28 @@ section.ming {@include white-text;}
 	padding-bottom: 2rem;
 }
 
+.oil {
+	background: $oil url('/assets/img/backgrounds/cabin-oil.png') 50% 0 no-repeat fixed;
+	background-size: cover;
+}
+
 .sublime-bg {
-	background: linear-gradient(90deg, rgba(0,0,0,0.75) 10%, rgba(0,0,0,0.75) 90%), url('/assets/img/backgrounds/sublime.gif') 50% 0 no-repeat fixed;
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	background-image: url('/assets/img/backgrounds/sublime.gif');
 	background-size: cover;
 	@include white-text;
 }
 
 .scrivs {
-	background: $orange url('/assets/img/backgrounds/scrivs.jpg') 50% 0% no-repeat fixed;
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	background-image: url('/assets/img/backgrounds/scrivs.jpg');
 	background-size: cover;
+}
+
+.no-padding {
+	padding: 0 !important;
 }
 
 .hero {
@@ -81,20 +94,24 @@ code, code p {
 .break {
 	padding: 2rem 1rem;
 	@include white-text;
-	background: $oil url('/assets/img/backgrounds/cabin-oil.png') 50% 0% no-repeat fixed;
-	background-size: cover;
 }
 
 .dark-content {
 	@include white-text;
-	background: rgba(0,0,0,.5);
 }
 
 .logo-list {margin-top: 2rem;margin-bottom: 1.5rem;list-style-type: none;}
   .logo-list li {margin-right:2rem; display:inline-block;}
   .logo-list img { width: 4rem;}
 
+.faq p {
+	max-width: 35rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .courses {
+	padding-top: 4rem;
  	.course-meta {
  		background-color: rgba($black, 0.15);
  		border-radius: $global-radius;

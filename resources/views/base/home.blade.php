@@ -40,13 +40,6 @@
     </div>
   </div>
 </section>
-<section class="break">
-  <div class="row">
-    <div class="small-12 columns">
-      <h2 class="text-center">Over 200+ videos available and more added every weekday. Always available to you.</h2>
-    </div>
-  </div>
-</section>
 <section class="quick">
 	<div class="row">
 		<div class="small-12 medium-4 content columns">
@@ -66,9 +59,19 @@
 		</div>
 	</div>
 </section>
-<section class="content sublime-bg">
+<section class="break oil">
   <div class="row">
-    <div class="small-12 medium-8 medium-offset-2 columns">
+    <div class="small-12 columns">
+      <h2 class="text-center">Over 200+ videos available and more added every weekday. Always available to you.</h2>
+    </div>
+  </div>
+</section>
+<section class="">
+  <div class="row" data-equalizer>
+    <div class="medium-6 columns no-padding" data-equalizer-watch>
+      <div class="sublime-bg" data-equalizer-watch></div>
+    </div>
+    <div class="small-12 medium-6 columns content" data-equalizer-watch>
       <h2 class="text-center">Become a Full Stack Web Developer</h2>
       <p>Deciding that it is time to build out the idea in your head or start a career as a web person sounds great until you get started. That is when you realize there are a million things you do not know.</p>
       <p>It can be frustrating because everywhere you go to look for help pulls you into a different direction. Developers are supposed to learn design and designers are supposed to learn development. Both are supposed to know how to work in the command line and deploy changes to the server.</p>
@@ -98,9 +101,6 @@
 </section>
 <section class="ming content courses">
   <div class="row ">
-    <div class="small-12 text-center columns">
-      <h2 class="text-center heading">What you will learn</h2>
-    </div>
     <div class="small-12 medium-4 columns">
       <div class="course-meta">
         <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
@@ -143,7 +143,7 @@
     </div>
   </div>
 </section>
-<section class="content home-content">
+<section class="content faq">
   <div class="row">
     <div class="small-12 columns">
       <h2 class="text-center">Frequently Asked Questions</h2>
@@ -170,9 +170,9 @@
     </div>
   </div>
 </section>
-<section class="scrivs">
+<section class="">
 	<div class="row" data-equalizer>
-		<div class="small-12 medium-6 content dark-content columns">
+		<div class="small-12 medium-6 content columns" data-equalizer-watch>
 			<h2 class="text-center">Who is behind this?</h2>
 			<p>I am! My name is Paul Scrivens and I&rsquo;ve been developing websites since 2002. Back then development was a lot easier because there wasn&rsquo;t so much going on.</p>
       <p>However, now there are a million different technologies trying to grab your attention. I should know because I build products myself that seem to need every new shiny thing under the sun.</p>
@@ -180,6 +180,9 @@
       <p>This is why I have created the Full Stack Web School: to give you the opportunity to choose your own path.</p>
       <p>I am here every step of your journey because I want to see you succeed.</p>
 		</div>
+    <div class="small-12 medium-6 no-padding columns" data-equalizer-watch>
+      <div class="scrivs" data-equalizer-watch>&nbsp;</div>
+    </div>
 	</div>
 </section>
 @endsection

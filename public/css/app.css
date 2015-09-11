@@ -5234,9 +5234,9 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
-  font-family: "proxima-nova-soft", "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
-  font-weight: 100;
+  font-weight: 500;
   line-height: 1.4;
   margin-bottom: 0.5rem;
   margin-top: 0.2rem;
@@ -6232,15 +6232,26 @@ section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming
   .orange-bg h1, .orange-bg h2, .orange-bg h3, .orange-bg h4, .orange-bg a, .orange-bg p, .orange-bg label, .orange-bg li {
     color: #FFFFFF; }
 
+.oil {
+  background: #333333 url("/assets/img/backgrounds/cabin-oil.png") 50% 0 no-repeat fixed;
+  background-size: cover; }
+
 .sublime-bg {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0.75) 90%), url("/assets/img/backgrounds/sublime.gif") 50% 0 no-repeat fixed;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-image: url("/assets/img/backgrounds/sublime.gif");
   background-size: cover; }
   .sublime-bg h1, .sublime-bg h2, .sublime-bg h3, .sublime-bg h4, .sublime-bg a, .sublime-bg p, .sublime-bg label, .sublime-bg li {
     color: #FFFFFF; }
 
 .scrivs {
-  background: #F08A24 url("/assets/img/backgrounds/scrivs.jpg") 50% 0% no-repeat fixed;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-image: url("/assets/img/backgrounds/scrivs.jpg");
   background-size: cover; }
+
+.no-padding {
+  padding: 0 !important; }
 
 .hero h2, .hero h1 {
   color: #FFFFFF;
@@ -6291,16 +6302,12 @@ code, code p {
   padding-bottom: 2rem; }
 
 .break {
-  padding: 2rem 1rem;
-  background: #333333 url("/assets/img/backgrounds/cabin-oil.png") 50% 0% no-repeat fixed;
-  background-size: cover; }
+  padding: 2rem 1rem; }
   .break h1, .break h2, .break h3, .break h4, .break a, .break p, .break label, .break li {
     color: #FFFFFF; }
 
-.dark-content {
-  background: rgba(0, 0, 0, 0.5); }
-  .dark-content h1, .dark-content h2, .dark-content h3, .dark-content h4, .dark-content a, .dark-content p, .dark-content label, .dark-content li {
-    color: #FFFFFF; }
+.dark-content h1, .dark-content h2, .dark-content h3, .dark-content h4, .dark-content a, .dark-content p, .dark-content label, .dark-content li {
+  color: #FFFFFF; }
 
 .logo-list {
   margin-top: 2rem;
@@ -6314,27 +6321,34 @@ code, code p {
 .logo-list img {
   width: 4rem; }
 
-.courses .course-meta {
-  background-color: rgba(0, 0, 0, 0.15);
-  border-radius: 3px;
-  padding: 2rem 2rem 1rem;
-  margin-bottom: 2rem; }
-  .courses .course-meta a {
-    border-bottom: 1px solid #FFFFFF; }
-    .courses .course-meta a:hover {
-      border-color: transparent; }
-  .courses .course-meta h2.heading {
-    background: rgba(0, 0, 0, 0.25);
-    padding: 0.5rem 1rem;
-    display: inline-block;
-    border-radius: 3px; }
-  .courses .course-meta span.time {
-    font-size: 0.88889rem;
-    color: rgba(255, 255, 255, 0.75); }
-  .courses .course-meta h4.subheader {
-    font-size: 0.77778rem;
-    color: rgba(255, 255, 255, 0.5);
-    margin: 0; }
+.faq p {
+  max-width: 35rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+.courses {
+  padding-top: 4rem; }
+  .courses .course-meta {
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 3px;
+    padding: 2rem 2rem 1rem;
+    margin-bottom: 2rem; }
+    .courses .course-meta a {
+      border-bottom: 1px solid #FFFFFF; }
+      .courses .course-meta a:hover {
+        border-color: transparent; }
+    .courses .course-meta h2.heading {
+      background: rgba(0, 0, 0, 0.25);
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      border-radius: 3px; }
+    .courses .course-meta span.time {
+      font-size: 0.88889rem;
+      color: rgba(255, 255, 255, 0.75); }
+    .courses .course-meta h4.subheader {
+      font-size: 0.77778rem;
+      color: rgba(255, 255, 255, 0.5);
+      margin: 0; }
 
 h2.heading {
   margin-bottom: 2rem; }
