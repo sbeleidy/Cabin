@@ -1,5 +1,14 @@
+var gulp = require('gulp');
 var elixir = require('laravel-elixir');
 
+gulp.task("dupefiles", function() {
+	gulp.src("vendor/bower_down/jquery/dist/jquery.min.js")
+		.pipe(gulp.dest("public/assets/js/vendor"));
+	gulp.src("node_modules/foundation-sites/js/foundation.min.js")
+		.pipe(gulp.dest("public/assets/js/vendor"));
+	gulp.src("node_modules/foundation-sites/js/foundation/foundation.equalizer.js")
+		.pipe(gulp.dest("public/assets/js/vendor"));
+});
 /*
  |--------------------------------------------------------------------------
  | Elixir Asset Management

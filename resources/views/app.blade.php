@@ -19,6 +19,13 @@
     <body>
     	@include('partials.navbar')
     	@yield('content')
+
+    	<script src="/assets/js/vendor/jquery.min.js"></script>
+    	<script src="/assets/js/vendor/foundation.min.js"></script>
+    	<script src="/assets/js/vendor/foundation.equalizer.js"></script>
     	@yield('scripts')
+    	<script>
+    	    $(document).foundation();
+    	</script>
     </body>
 </html>

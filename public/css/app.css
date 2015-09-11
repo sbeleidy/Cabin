@@ -6245,6 +6245,10 @@ section.ming a:not(.button) {
   .sublime-bg a:not(.button) {
     border-color: #FFFFFF; }
 
+.scrivs {
+  background: #F08A24 url("/assets/img/backgrounds/scrivs.jpg") 50% 0% no-repeat fixed;
+  background-size: cover; }
+
 .hero {
   background-color: rgba(0, 0, 0, 0.75); }
   .hero h2, .hero h1 {
@@ -6288,7 +6292,27 @@ code, code p {
   font-size: 0.77778rem; }
 
 .content {
-  padding: 2rem 0; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
+
+.dark-content {
+  background: rgba(0, 0, 0, 0.5); }
+  .dark-content h1, .dark-content h2, .dark-content h3, .dark-content h4, .dark-content a, .dark-content p, .dark-content label, .dark-content li {
+    color: #FFFFFF; }
+  .dark-content a:not(.button) {
+    border-color: #FFFFFF; }
+
+.logo-list {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  list-style-type: none; }
+
+.logo-list li {
+  margin-right: 2rem;
+  display: inline-block; }
+
+.logo-list img {
+  width: 4rem; }
 
 @media only screen and (min-width: 40.063em) {
   .hero {

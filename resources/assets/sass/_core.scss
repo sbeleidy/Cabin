@@ -22,6 +22,11 @@ section.ming {@include white-text;}
 	@include white-text;
 }
 
+.scrivs {
+	background: $orange url('/assets/img/backgrounds/scrivs.jpg') 50% 0% no-repeat fixed;
+	background-size: cover;
+}
+
 .hero {
 	background-color: rgba($black, 0.75);
 	h2, h1 {
@@ -70,8 +75,18 @@ code, code p {
 }
 
 .content {
-	padding: 2rem 0;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
+
+.dark-content {
+	@include white-text;
+	background: rgba(0,0,0,.5);
+}
+
+.logo-list {margin-top: 2rem;margin-bottom: 1.5rem;list-style-type: none;}
+  .logo-list li {margin-right:2rem; display:inline-block;}
+  .logo-list img { width: 4rem;}
 
 @media #{$medium-up} {
 	.hero {
