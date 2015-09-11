@@ -35,8 +35,15 @@
         <li><a href="#">Nginx</a></li>
         <li><a href="#">Redis</a></li>
       </ul>
-      <h3>Yes, you will build projects that go over all of these technologies. Over 200+ videos and more added every weekday. Don&rsquo;t know what any of these things mean? No worries because you will learn them all soon enough.</h3>
+      <h3>You will build projects that go over all of these technologies. Don&rsquo;t know what any of these things mean? No worries because you will learn them all soon enough.</h3>
       <h2><a href="https://courses.makerscabin.com/purchase/module/web" class="button round large">Start Learning Today for Just $50</a></h2>
+    </div>
+  </div>
+</section>
+<section class="break">
+  <div class="row">
+    <div class="small-12 columns">
+      <h2 class="text-center">Over 200+ videos available and more added every weekday. Always available to you.</h2>
     </div>
   </div>
 </section>
@@ -45,17 +52,17 @@
 		<div class="small-12 medium-4 content columns">
       <h2 class="text-center"><i class="fa fa-hourglass-3"></i></h2>
 			<h3 class="text-center">Learn at your own pace</h3>
-			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning.</p>
+			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning. Thre is no time limit.</p>
 		</div>
 		<div class="small-12 medium-4 content columns">
       <h2 class="text-center"><i class="fa fa-line-chart"></i></h2>
 			<h3 class="text-center">Great for all skill levels</h3>
-			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning.</p>
+			<p>Because the Full Stack Web School covers the whole stack of technologies you will need to get a web application up and running, it is useful for all skill levels. Pick and choose exactly what you want to learn. Just how education should be.</p>
 		</div>
 		<div class="small-12 medium-4 content columns">
       <h2 class="text-center"><i class="fa fa-group"></i></h2>
 			<h3 class="text-center">Community Learning</h3>
-			<p>The Full Stack Web School courses are all video-based so you can watch them whenever you want. No need to disappear for three months to leave your loved ones behind. Pick a time, open up your browser, and start learning.</p>
+			<p>Nobody likes to learn alone. When you become a student of the Full Stack Web School you will join over 400+ other students and learn along with them. Interact in the discussions for each video, join in the Slack community, and post on the Forums.</p>
 		</div>
 	</div>
 </section>
@@ -86,6 +93,53 @@
         <li><img alt="Github" title="Github" src="/assets/img/logos/github.png"></li>
       </ul>
       <h2><a href="https://courses.makerscabin.com/purchase/module/web" class="button round large">Start Learning Today for Just $50</a></h2>
+    </div>
+  </div>
+</section>
+<section class="ming content courses">
+  <div class="row ">
+    <div class="small-12 text-center columns">
+      <h2 class="text-center heading">What you will learn</h2>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <div class="course-meta">
+        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
+        <h3>Makers Todo</h3>
+        <p>Work with HTML to understand how things are working out.</p>
+        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
+      </div>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <div class="course-meta">
+        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
+        <h3>Makers Todo</h3>
+        <p>Work with HTML to understand how things are working out.</p>
+        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
+      </div>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <div class="course-meta">
+        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
+        <h3>Makers Todo</h3>
+        <p>Work with HTML to understand how things are working out.</p>
+        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
+      </div>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <div class="course-meta">
+        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
+        <h3>Makers Todo</h3>
+        <p>Work with HTML to understand how things are working out.</p>
+        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
+      </div>
+    </div>
+    <div class="small-12 medium-4 columns">
+      <div class="course-meta">
+        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
+        <h3>Makers Todo</h3>
+        <p>Work with HTML to understand how things are working out.</p>
+        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
+      </div>
     </div>
   </div>
 </section>
@@ -120,9 +174,11 @@
 	<div class="row" data-equalizer>
 		<div class="small-12 medium-6 content dark-content columns">
 			<h2 class="text-center">Who is behind this?</h2>
-			<p><strong>Will this school work for Windows?</strong><br>Yes. The only Mac-only app that is used in the course is Sketch 3, but any graphics application (Photoshop, Illustrator, etc) can be used to follow along. If you don't want to touch any graphics applications then that is fine as well.</p>
-			<p><strong>What software will I need to purchase?</strong><br>To follow along? None. I do use Sketch for some minor graphics work, but again you can use whatever graphics app you want. Everything else we use is easily downloaded of the Internet for free.</p>
-			<p><strong>What skill level is required to get started with this school?</strong><br>You will have to know how to turn a computer and connect to the Internet. Beyond that the Full Stack Web School covers all skill levels.</p>
+			<p>I am! My name is Paul Scrivens and I&rsquo;ve been developing websites since 2002. Back then development was a lot easier because there wasn&rsquo;t so much going on.</p>
+      <p>However, now there are a million different technologies trying to grab your attention. I should know because I build products myself that seem to need every new shiny thing under the sun.</p>
+      <p>I have spent time as a developer, designer, product manager, director of technology, founder, and it feels like a million other things. I wouldn&rsquo;t have been able to go through these different experiences if I had not taken the time to learn design and development.</p>
+      <p>This is why I have created the Full Stack Web School: to give you the opportunity to choose your own path.</p>
+      <p>I am here every step of your journey because I want to see you succeed.</p>
 		</div>
 	</div>
 </section>

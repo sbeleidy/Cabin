@@ -1,6 +1,5 @@
 @mixin white-text {
 	h1, h2, h3, h4, a, p, label, li {color: $white;}
-	a:not(.button) {border-color: $white}
 }
 
 a {
@@ -28,7 +27,6 @@ section.ming {@include white-text;}
 }
 
 .hero {
-	background-color: rgba($black, 0.75);
 	h2, h1 {
     	color: $white;
     	line-height: 1;
@@ -56,7 +54,7 @@ section.ming {@include white-text;}
 			font-family: $font-family-soft;
 			color: $white;
 			background: transparent;
-			border: 1px solid rgba($white, 0.25);
+			border: 1px solid rgba($white, 1);
 			border-radius: 3px;
 			padding: 0.5rem 0.75rem;
 			transition: all 0.2s linear;
@@ -80,6 +78,13 @@ code, code p {
 	padding-bottom: 2rem;
 }
 
+.break {
+	padding: 2rem 1rem;
+	@include white-text;
+	background: $oil url('/assets/img/backgrounds/cabin-oil.png') 50% 0% no-repeat fixed;
+	background-size: cover;
+}
+
 .dark-content {
 	@include white-text;
 	background: rgba(0,0,0,.5);
@@ -88,6 +93,44 @@ code, code p {
 .logo-list {margin-top: 2rem;margin-bottom: 1.5rem;list-style-type: none;}
   .logo-list li {margin-right:2rem; display:inline-block;}
   .logo-list img { width: 4rem;}
+
+.courses {
+ 	.course-meta {
+ 		background-color: rgba($black, 0.15);
+ 		border-radius: $global-radius;
+ 		padding: 2rem 2rem 1rem;
+ 		margin-bottom: 2rem;
+ 		 	a {
+ 		 		border-bottom: 1px solid $white;
+ 		 		&:hover {
+ 		 			border-color: transparent;
+ 		 		}
+ 		 	}
+ 			
+ 			h2.heading {
+ 				background: rgba($black, 0.25);
+ 				padding: 0.5rem 1rem;
+ 				display: inline-block;
+ 				border-radius: $global-radius;
+ 			}
+
+ 		 	span.time {
+ 		 		font-size: rem-calc(16);
+ 		 		color: rgba($white, 0.75);
+ 		 	}
+ 		 	h4.subheader {
+ 		 		font-size: rem-calc(14);
+ 		 		color: rgba($white, 0.5);
+ 		 		margin: 0;
+ 		 	}
+ 	}
+
+ 	
+ }
+
+ h2.heading {
+ 	margin-bottom: 2rem;
+ }
 
 @media #{$medium-up} {
 	.hero {

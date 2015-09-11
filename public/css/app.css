@@ -139,7 +139,7 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row .row {
-    margin: 0 -0.83333rem;
+    margin: 0 -1.38889rem;
     max-width: none;
     width: auto; }
     .row .row:before, .row .row:after {
@@ -159,8 +159,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 0.83333rem;
-  padding-right: 0.83333rem;
+  padding-left: 1.38889rem;
+  padding-right: 1.38889rem;
   width: 100%;
   float: left; }
 
@@ -272,8 +272,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
+    padding-left: 1.38889rem;
+    padding-right: 1.38889rem;
     float: left; }
   .small-1 {
     width: 8.33333%; }
@@ -357,8 +357,8 @@ select {
     margin-right: 0; }
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
+    padding-left: 1.38889rem;
+    padding-right: 1.38889rem;
     float: left; } }
 
 @media only screen and (min-width: 40.063em) {
@@ -461,8 +461,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
+    padding-left: 1.38889rem;
+    padding-right: 1.38889rem;
     float: left; }
   .medium-1 {
     width: 8.33333%; }
@@ -546,8 +546,8 @@ select {
     margin-right: 0; }
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
+    padding-left: 1.38889rem;
+    padding-right: 1.38889rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -746,8 +746,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
+    padding-left: 1.38889rem;
+    padding-right: 1.38889rem;
     float: left; }
   .large-1 {
     width: 8.33333%; }
@@ -831,8 +831,8 @@ select {
     margin-right: 0; }
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 0.83333rem;
-    padding-right: 0.83333rem;
+    padding-left: 1.38889rem;
+    padding-right: 1.38889rem;
     float: left; }
   .push-0 {
     position: relative;
@@ -954,7 +954,7 @@ select {
         background: rgba(51, 51, 51, 0.5); }
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
-      padding: 0.83333rem; }
+      padding: 1.38889rem; }
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
         background: rgba(51, 51, 51, 0.75);
         display: block; }
@@ -4396,17 +4396,17 @@ table {
   .tabs-content > .content {
     display: none;
     float: left;
-    padding: 0.83333rem 0;
+    padding: 1.38889rem 0;
     width: 100%; }
     .tabs-content > .content.active {
       display: block;
       float: none; }
     .tabs-content > .content.contained {
-      padding: 0.83333rem; }
+      padding: 1.38889rem; }
   .tabs-content.vertical {
     display: block; }
     .tabs-content.vertical > .content {
-      padding: 0 0.83333rem; }
+      padding: 0 1.38889rem; }
 
 @media only screen and (min-width: 40.063em) {
   .tabs.vertical {
@@ -6225,41 +6225,35 @@ a {
 section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming a, section.ming p, section.ming label, section.ming li {
   color: #FFFFFF; }
 
-section.ming a:not(.button) {
-  border-color: #FFFFFF; }
-
 .orange-bg {
   background: #F08A24 url("/assets/img/backgrounds/cabin-orange.png") 50% 0 no-repeat fixed;
   background-size: cover;
   padding-bottom: 2rem; }
   .orange-bg h1, .orange-bg h2, .orange-bg h3, .orange-bg h4, .orange-bg a, .orange-bg p, .orange-bg label, .orange-bg li {
     color: #FFFFFF; }
-  .orange-bg a:not(.button) {
-    border-color: #FFFFFF; }
 
 .sublime-bg {
   background: linear-gradient(90deg, rgba(0, 0, 0, 0.75) 10%, rgba(0, 0, 0, 0.75) 90%), url("/assets/img/backgrounds/sublime.gif") 50% 0 no-repeat fixed;
   background-size: cover; }
   .sublime-bg h1, .sublime-bg h2, .sublime-bg h3, .sublime-bg h4, .sublime-bg a, .sublime-bg p, .sublime-bg label, .sublime-bg li {
     color: #FFFFFF; }
-  .sublime-bg a:not(.button) {
-    border-color: #FFFFFF; }
 
 .scrivs {
   background: #F08A24 url("/assets/img/backgrounds/scrivs.jpg") 50% 0% no-repeat fixed;
   background-size: cover; }
 
-.hero {
-  background-color: rgba(0, 0, 0, 0.75); }
-  .hero h2, .hero h1 {
-    color: #FFFFFF;
-    line-height: 1; }
-  .hero h3, .hero h4 {
-    color: #FFFFFF; }
-  .hero .hero-paragraph {
-    margin-top: 1rem; }
-  .hero .hero-span-list li {
-    font-size: 0.88889rem; }
+.hero h2, .hero h1 {
+  color: #FFFFFF;
+  line-height: 1; }
+
+.hero h3, .hero h4 {
+  color: #FFFFFF; }
+
+.hero .hero-paragraph {
+  margin-top: 1rem; }
+
+.hero .hero-span-list li {
+  font-size: 0.88889rem; }
 
 .top-section {
   border-top: none;
@@ -6278,7 +6272,7 @@ section.ming a:not(.button) {
       font-family: "proxima-nova-soft", "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       color: #FFFFFF;
       background: transparent;
-      border: 1px solid rgba(255, 255, 255, 0.25);
+      border: 1px solid white;
       border-radius: 3px;
       padding: 0.5rem 0.75rem;
       transition: all 0.2s linear;
@@ -6296,12 +6290,17 @@ code, code p {
   padding-top: 2rem;
   padding-bottom: 2rem; }
 
+.break {
+  padding: 2rem 1rem;
+  background: #333333 url("/assets/img/backgrounds/cabin-oil.png") 50% 0% no-repeat fixed;
+  background-size: cover; }
+  .break h1, .break h2, .break h3, .break h4, .break a, .break p, .break label, .break li {
+    color: #FFFFFF; }
+
 .dark-content {
   background: rgba(0, 0, 0, 0.5); }
   .dark-content h1, .dark-content h2, .dark-content h3, .dark-content h4, .dark-content a, .dark-content p, .dark-content label, .dark-content li {
     color: #FFFFFF; }
-  .dark-content a:not(.button) {
-    border-color: #FFFFFF; }
 
 .logo-list {
   margin-top: 2rem;
@@ -6314,6 +6313,31 @@ code, code p {
 
 .logo-list img {
   width: 4rem; }
+
+.courses .course-meta {
+  background-color: rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  padding: 2rem 2rem 1rem;
+  margin-bottom: 2rem; }
+  .courses .course-meta a {
+    border-bottom: 1px solid #FFFFFF; }
+    .courses .course-meta a:hover {
+      border-color: transparent; }
+  .courses .course-meta h2.heading {
+    background: rgba(0, 0, 0, 0.25);
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    border-radius: 3px; }
+  .courses .course-meta span.time {
+    font-size: 0.88889rem;
+    color: rgba(255, 255, 255, 0.75); }
+  .courses .course-meta h4.subheader {
+    font-size: 0.77778rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 0; }
+
+h2.heading {
+  margin-bottom: 2rem; }
 
 @media only screen and (min-width: 40.063em) {
   .hero {
