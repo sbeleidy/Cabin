@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Http\Controllers\Auth;
+namespace Makerscabin\Http\Controllers\Auth;
 
-use App\User;
+use Makerscabin\User;
 use Validator;
-use App\Http\Controllers\Controller;
+use Makerscabin\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Illuminate\Foundation\Auth\AuthenticatesAndRegistersUsers;
 

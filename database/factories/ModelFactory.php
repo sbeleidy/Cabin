@@ -11,11 +11,19 @@
 |
 */
 
-$factory->define(App\User::class, function (Faker\Generator $faker) {
+$factory->define(Makerscabin\User::class, function (Faker\Generator $faker) {
     return [
-        'name' => $faker->name,
+        'name' => $faker->word(),
         'email' => $faker->email,
         'password' => bcrypt(str_random(10)),
         'remember_token' => str_random(10),
     ];
+});
+
+$factory->define(Makerscabin\School::class, function (Faker\Generator $faker) {
+	return [
+		'name' 			=> $faker->word(),
+		'description' 	=> $faker->paragraph(3,10),  
+		'summary'		=> $faker->sentence(20),
+	];
 });

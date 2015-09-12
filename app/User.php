@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Makerscabin;
 
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Database\Eloquent\Model;
@@ -36,4 +36,12 @@ class User extends Model implements AuthenticatableContract,
      * @var array
      */
     protected $hidden = ['password', 'remember_token'];
+
+    /**
+     * Has Many Relationship with Schools
+     */
+    public function schools()
+    {
+        return $this->belongsToMany('Makerscabin\School');
+    }
 }

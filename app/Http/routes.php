@@ -12,3 +12,7 @@
 */
 
 Route::get('/', 'BaseController@index');
+
+Route::group(['prefix' => 'admin'], function () {
+	Route::resource('school', 'Admin\SchoolController');
+});
