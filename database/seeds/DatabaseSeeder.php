@@ -18,6 +18,15 @@ class DatabaseSeeder extends Seeder
 
         $this->call(UserTableSeeder::class);
         $this->call(SchoolTableSeeder::class);
+        $this->call(CourseTableSeeder::class);
+        $this->call(SectionTableSeeder::class);
+        $this->call(LessonTableSeeder::class);
+
+        DB::table('users')->insert([
+            'name'  => 'Scrivs',
+            'email' => 'scrivs@gmail.com',
+            'password' => bcrypt('Icub4ucme2'),
+        ]);
 
         DB::statement('SET FOREIGN_KEY_CHECKS=1;');
 

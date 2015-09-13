@@ -6,9 +6,9 @@ use Illuminate\Http\Request;
 
 use Makerscabin\Http\Requests;
 use Makerscabin\Http\Controllers\Controller;
-use Makerscabin\School;
+use Makerscabin\Lesson;
 
-class SchoolController extends Controller
+class LessonController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +17,7 @@ class SchoolController extends Controller
      */
     public function index()
     {
-        return view('admin.school.index')->withSchools(School::all());
+        //
     }
 
     /**
@@ -27,7 +27,7 @@ class SchoolController extends Controller
      */
     public function create()
     {
-        return view('admin.school.create');
+        //
     }
 
     /**
@@ -49,9 +49,9 @@ class SchoolController extends Controller
      */
     public function show($id)
     {
-        $school = School::findOrFail($id);
+        $lesson = Lesson::findOrFail($id);
 
-        return view('admin.school.show', compact('school'));
+        return view('admin.lesson.show', compact('lesson'));
     }
 
     /**

@@ -100,47 +100,17 @@
   </div>
 </section>
 <section class="ming content courses">
-  <div class="row ">
+  <div class="row" data-equalizer data-equalizer-mq="medium-up">
+    @foreach ($courses as $course)
     <div class="small-12 medium-4 columns">
-      <div class="course-meta">
-        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
-        <h3>Makers Todo</h3>
-        <p>Work with HTML to understand how things are working out.</p>
-        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
+      <div class="course-meta" data-equalizer-watch>
+        <h4 class="subheader">{{ $course->skill }} <span class="time right"><i class="fa fa-clock-o"></i> {{ number_format(((int)$course->length / 60) / 60, 2) }} Hours</span></h4>
+        <h3><a href="{{ route('course.show', $course->id) }}">{{ $course->name }}</a></h3>
+        <p>{{ substr($course->description, 0, 120) }}...</p>
+        <p><a href="{{ route('course.show', $course->id) }}">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
       </div>
     </div>
-    <div class="small-12 medium-4 columns">
-      <div class="course-meta">
-        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
-        <h3>Makers Todo</h3>
-        <p>Work with HTML to understand how things are working out.</p>
-        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
-      </div>
-    </div>
-    <div class="small-12 medium-4 columns">
-      <div class="course-meta">
-        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
-        <h3>Makers Todo</h3>
-        <p>Work with HTML to understand how things are working out.</p>
-        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
-      </div>
-    </div>
-    <div class="small-12 medium-4 columns">
-      <div class="course-meta">
-        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
-        <h3>Makers Todo</h3>
-        <p>Work with HTML to understand how things are working out.</p>
-        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
-      </div>
-    </div>
-    <div class="small-12 medium-4 columns">
-      <div class="course-meta">
-        <h4 class="subheader">BEGINNER <span class="time right"><i class="fa fa-clock-o"></i> 2 Hours</span></h4>
-        <h3>Makers Todo</h3>
-        <p>Work with HTML to understand how things are working out.</p>
-        <p><a href="#">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
-      </div>
-    </div>
+    @endforeach
   </div>
 </section>
 <section class="content faq">

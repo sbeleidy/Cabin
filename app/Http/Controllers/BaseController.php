@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 
 use Makerscabin\Http\Requests;
 use Makerscabin\Http\Controllers\Controller;
+use Makerscabin\Course;
 
 class BaseController extends Controller
 {
@@ -16,6 +17,10 @@ class BaseController extends Controller
      */
     public function index()
     {
-        return view('base.home');
+    	$courses = Course::where('published', 1)
+    		->orderBy('id', 'desc')
+    		->take(18)
+    		->get();
+        return view('base.home', compact('courses'));
     }
 }

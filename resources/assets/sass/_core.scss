@@ -63,7 +63,6 @@ section.ming {@include white-text;}
 .top-section {
 	border-top: none;
 	margin-top: rem-calc(-45);
-	padding-top: 6.5rem;
 }
 
 .course-list {
@@ -88,6 +87,52 @@ section.ming {@include white-text;}
 				border-color: $white;
 				color: $white;
 				cursor: default;
+			}
+		}
+	}
+}
+
+.content-hero {
+	h2 {
+		font-size: 3rem;
+	}
+}
+
+section.lesson-video {
+	background-color: $oil;
+	padding-top: 2rem;
+}
+
+section.lesson {
+	table.lessons {
+		tr {
+			td {
+				font-size: rem-calc(18);
+				padding: 1rem;
+				a {
+					display:block; 
+				}
+			}
+			&:hover {
+				background-color: $ming;
+				color: $white;
+				transition: all 0.2s linear;
+				td {
+					color: $white;
+					a {
+						color: $white;
+					}
+				}
+			}
+			&.active {
+				background-color: $ming;
+				color: $white;
+				td {
+					color: $white;
+					a {
+						color: $white;
+					}
+				}
 			}
 		}
 	}
@@ -128,6 +173,9 @@ code, code p {
  		border-radius: $global-radius;
  		padding: 2rem 2rem 1rem;
  		margin-bottom: 2rem;
+ 		p {
+ 			font-size: rem-calc(16)
+ 		}
  		 	a {
  		 		border-bottom: 1px solid $white;
  		 		&:hover {

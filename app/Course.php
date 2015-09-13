@@ -21,4 +21,9 @@ class Course extends Model
     {
     	return $this->hasMany('Makerscabin\Section');
     }
+
+    public function lessons()
+    {
+        return $this->hasMany('Makerscabin\Lesson');
+    }
 }

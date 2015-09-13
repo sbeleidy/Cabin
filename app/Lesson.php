@@ -13,4 +13,9 @@ class Lesson extends Model
     {
     	return $this->belongsTo('Makerscabin\Section');
     }
+
+    public function course()
+    {
+    	return $this->belongsTo('Makerscabin\Course');
+    }
 }

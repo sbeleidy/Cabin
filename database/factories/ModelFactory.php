@@ -23,7 +23,39 @@ $factory->define(Makerscabin\User::class, function (Faker\Generator $faker) {
 $factory->define(Makerscabin\School::class, function (Faker\Generator $faker) {
 	return [
 		'name' 			=> $faker->word(),
-		'description' 	=> $faker->paragraph(3,10),  
+		'description' 	=> $faker->realText(144),  
 		'summary'		=> $faker->sentence(20),
+	];
+});
+
+$factory->define(Makerscabin\Course::class, function (Faker\Generator $faker) {
+	return [
+		'name'		=> $faker->word(),
+		'description'	=> $faker->realText(144),
+		'school_id'	=> mt_rand(1,5),
+		'skill'	=> 'BEGINNER',
+		'length'	=> mt_rand(600, 60000),
+		'published'	=> 1,
+	];
+});
+
+$factory->define(Makerscabin\Section::class, function (Faker\Generator $faker) {
+	return [
+		'name'	=> $faker->word(),
+		'description'	=> $faker->sentence(3,10),
+		'course_id'	=> mt_rand(1,100),
+	];
+});
+
+$factory->define(Makerscabin\Lesson::class, function (Faker\Generator $faker)
+{
+	return [
+		'name' => $faker->word(),
+		'description' => $faker->sentence(5, 15),	
+		'github'	=> 'https://github.com/MakersCabin/Cabin',
+		'video'	=> '5pwfamiuit',
+		'length'	=> mt_rand(180, 1200),
+		'course_id'	=> mt_rand(1, 100),
+		'section_id' => mt_rand(1,500),
 	];
 });

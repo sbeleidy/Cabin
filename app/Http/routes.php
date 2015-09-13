@@ -13,6 +13,13 @@
 
 Route::get('/', 'BaseController@index');
 
+Route::get('course/show/{id}', ['as' => 'course.show', 'uses' => 'CourseController@show']);
+
+Route::get('lesson/show/{id}', ['as' => 'lesson.show', 'uses' => 'LessonController@show']);
+
 Route::group(['prefix' => 'admin'], function () {
 	Route::resource('school', 'Admin\SchoolController');
+	Route::resource('course', 'Admin\CourseController');
+	Route::resource('section', 'Admin\SectionController');
+	Route::resource('lesson', 'Admin\LessonController');
 });

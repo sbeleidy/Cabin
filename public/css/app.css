@@ -6278,8 +6278,7 @@ section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming
 
 .top-section {
   border-top: none;
-  margin-top: -2.5rem;
-  padding-top: 6.5rem; }
+  margin-top: -2.5rem; }
 
 .course-list {
   margin-left: 0.05rem;
@@ -6303,6 +6302,36 @@ section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming
         border-color: #FFFFFF;
         color: #FFFFFF;
         cursor: default; }
+
+.content-hero h2 {
+  font-size: 3rem; }
+
+section.lesson-video {
+  background-color: #333333;
+  padding-top: 2rem; }
+
+section.lesson table.lessons tr td {
+  font-size: 1rem;
+  padding: 1rem; }
+  section.lesson table.lessons tr td a {
+    display: block; }
+
+section.lesson table.lessons tr:hover {
+  background-color: #336E7B;
+  color: #FFFFFF;
+  transition: all 0.2s linear; }
+  section.lesson table.lessons tr:hover td {
+    color: #FFFFFF; }
+    section.lesson table.lessons tr:hover td a {
+      color: #FFFFFF; }
+
+section.lesson table.lessons tr.active {
+  background-color: #336E7B;
+  color: #FFFFFF; }
+  section.lesson table.lessons tr.active td {
+    color: #FFFFFF; }
+    section.lesson table.lessons tr.active td a {
+      color: #FFFFFF; }
 
 code, code p {
   font-size: 0.77778rem; }
@@ -6343,6 +6372,8 @@ code, code p {
     border-radius: 3px;
     padding: 2rem 2rem 1rem;
     margin-bottom: 2rem; }
+    .courses .course-meta p {
+      font-size: 0.88889rem; }
     .courses .course-meta a {
       border-bottom: 1px solid #FFFFFF; }
       .courses .course-meta a:hover {

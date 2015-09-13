@@ -37,11 +37,26 @@ class User extends Model implements AuthenticatableContract,
      */
     protected $hidden = ['password', 'remember_token'];
 
+
     /**
      * Has Many Relationship with Schools
      */
     public function schools()
     {
         return $this->belongsToMany('Makerscabin\School');
+    }
+
+    public function roles()
+    {
+        return $this->belongsToMany('Makerscabin\Role');
+    }
+
+    public function hasRole($role)
+    {
+        if (is_string($role)) {
+            return $this->roles->contains('name', $role);
+        }
+
+        return !! $role->intersect($this->roles)->count();
     }
 }

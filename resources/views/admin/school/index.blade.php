@@ -13,7 +13,7 @@
 	<div class="row">
 		<div class="small-12 columns">
 			@foreach ($schools as $school)
-			<h3>{{ $school->name }}</h3>
+			<h3><a href="{{ route('admin.school.show', $school->id) }}">{{ $school->name }}</a></h3>
 			@endforeach
 		</div>
 	</div>
