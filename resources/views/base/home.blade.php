@@ -99,7 +99,7 @@
     </div>
   </div>
 </section>
-<section class="ming content courses">
+<section class="ming courses">
   <div class="row" data-equalizer data-equalizer-mq="medium-up">
     @foreach ($courses as $course)
     <div class="small-12 medium-4 columns">
@@ -144,7 +144,7 @@
 	<div class="row" data-equalizer>
 		<div class="small-12 medium-6 content scrivs-bg columns" data-equalizer-watch>
 			<h2 class="text-center">Who is behind this?</h2>
-      <div class="text-center"><img class="avatar" src="/assets/img/backgrounds/scrivs.jpg"></div>
+      <!--<div class="text-center"><img class="avatar" src="/assets/img/backgrounds/scrivs.jpg"></div>-->
 			<p>I am! My name is Paul Scrivens and I&rsquo;ve been developing websites since 2002. Back then development was a lot easier because there wasn&rsquo;t so much going on.</p>
       <p>However, now there are a million different technologies trying to grab your attention. I should know because I build products myself that seem to need every new shiny thing under the sun.</p>
       <p>I have spent time as a developer, designer, product manager, director of technology, founder, and it feels like a million other things. I wouldn&rsquo;t have been able to go through these different experiences if I had not taken the time to learn design and development.</p>
