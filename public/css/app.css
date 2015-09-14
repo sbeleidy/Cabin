@@ -5234,7 +5234,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #333333;
-  font-family: "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "proxima-nova-soft", "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   line-height: 1.4;
@@ -6303,35 +6303,59 @@ section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming
         color: #FFFFFF;
         cursor: default; }
 
-.content-hero h2 {
-  font-size: 3rem; }
+.content-hero {
+  padding-top: 4rem; }
+  .content-hero h2 {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1;
+    color: #FFFFFF; }
+  .content-hero h3.heading-meta {
+    margin: 0; }
+    .content-hero h3.heading-meta a {
+      color: rgba(255, 255, 255, 0.75);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
 
 section.lesson-video {
   background-color: #333333;
   padding-top: 2rem; }
+  section.lesson-video ul.button-group.stacked {
+    border-radius: 3px;
+    border: 2px solid white; }
+    section.lesson-video ul.button-group.stacked li {
+      margin: 0;
+      display: block;
+      border-bottom: 1px solid #FFFFFF; }
+      section.lesson-video ul.button-group.stacked li a.button {
+        margin: 0;
+        display: block;
+        border: none; }
+      section.lesson-video ul.button-group.stacked li:last-child {
+        border-bottom: none; }
 
-section.lesson table.lessons tr td {
-  font-size: 1rem;
-  padding: 1rem; }
-  section.lesson table.lessons tr td a {
-    display: block; }
-
-section.lesson table.lessons tr:hover {
-  background-color: #336E7B;
-  color: #FFFFFF;
-  transition: all 0.2s linear; }
-  section.lesson table.lessons tr:hover td {
-    color: #FFFFFF; }
-    section.lesson table.lessons tr:hover td a {
+section.lesson {
+  padding: 2rem 0; }
+  section.lesson table.lessons tr td {
+    padding: 0; }
+    section.lesson table.lessons tr td a {
+      display: block;
+      padding: 1rem;
+      color: #333333; }
+  section.lesson table.lessons tr:hover {
+    background-color: #336E7B;
+    color: #FFFFFF;
+    transition: all 0.2s linear; }
+    section.lesson table.lessons tr:hover td {
       color: #FFFFFF; }
-
-section.lesson table.lessons tr.active {
-  background-color: #336E7B;
-  color: #FFFFFF; }
-  section.lesson table.lessons tr.active td {
+      section.lesson table.lessons tr:hover td a {
+        color: #FFFFFF; }
+  section.lesson table.lessons tr.active {
+    background-color: #336E7B;
     color: #FFFFFF; }
-    section.lesson table.lessons tr.active td a {
+    section.lesson table.lessons tr.active td {
       color: #FFFFFF; }
+      section.lesson table.lessons tr.active td a {
+        color: #FFFFFF; }
 
 code, code p {
   font-size: 0.77778rem; }

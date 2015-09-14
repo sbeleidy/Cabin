@@ -12,6 +12,9 @@
 */
 
 Route::get('/', 'BaseController@index');
+Route::get('course', 'CourseController@index');
+
+Route::get('dashboard', 'UserController@dashboard');
 
 Route::get('course/show/{id}', ['as' => 'course.show', 'uses' => 'CourseController@show']);
 
@@ -23,3 +26,8 @@ Route::group(['prefix' => 'admin'], function () {
 	Route::resource('section', 'Admin\SectionController');
 	Route::resource('lesson', 'Admin\LessonController');
 });
+
+// Authentication routes...
+Route::get('login', 'Auth\AuthController@getLogin');
+Route::post('login', 'Auth\AuthController@postLogin');
+Route::get('logout', 'Auth\AuthController@getLogout');

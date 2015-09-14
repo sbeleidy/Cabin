@@ -10,6 +10,13 @@ use Makerscabin\Course;
 
 class CourseController extends Controller
 {
+	public function index()
+	{
+		$courses = Course::all();
+
+		return view('course.index', compact('courses'));
+	}
+	
     public function show($id)
     {
     	$course = Course::findOrFail($id);
