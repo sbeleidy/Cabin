@@ -60,6 +60,10 @@ section.ming {@include white-text;}
   	.hero-span-list li {font-size: rem-calc(16px)}
 }
 
+.quick {
+	background-color: $white;
+}
+
 .top-section {
 	border-top: none;
 	margin-top: rem-calc(-45);
@@ -90,6 +94,14 @@ section.ming {@include white-text;}
 			}
 		}
 	}
+}
+
+.credits {
+    padding: 1rem 0 0;
+    background-color: rgba(51,51,51,.2);
+    a, h2, h3, label, p {
+    	color: $white;
+    }
 }
 
 .content-hero {
@@ -175,6 +187,7 @@ code, code p {
 .content {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
+	background-color: $white;
 }
 
 .break {

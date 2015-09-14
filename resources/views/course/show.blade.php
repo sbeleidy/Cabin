@@ -8,7 +8,7 @@
 		</div>
 	</div>
 </section>
-<section class="lesson">
+<section class="lesson content">
 	<div class="row">
 		<div class="small-12 medium-6 columns">
 			<div class="panel">
@@ -18,13 +18,13 @@
 		</div>
 		<div class="small-12 medium-6 columns">
 			<h3>Lessons: {{ count($course->lessons) }}</h3>
-			<table width="100%">
+			<table class="lessons" width="100%">
 			<?php $count = 1; ?>
 			@foreach ($course->lessons as $lesson)
 				<tr>
-					<td>{{ $count }}</td>
+					<td><a href="{{ route('lesson.show', $lesson->id) }}">{{ $count }}</a></td>
 					<td><a href="{{ route('lesson.show', $lesson->id) }}">{{ $lesson->name }}</a></td>
-					<td>{{ gmdate("i:s",$lesson->length) }}</td>
+					<td><a href="{{ route('lesson.show', $lesson->id) }}">{{ gmdate("i:s",$lesson->length) }}</a></td>
 				</tr>
 			<?php $count++;?>
 			@endforeach

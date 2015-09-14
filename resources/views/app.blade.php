@@ -17,10 +17,10 @@
         <script>try{Typekit.load();}catch(e){}</script>
         @yield('styles')
     </head>
-    <body>
+    <body class="ming">
     	@include('partials.navbar')
     	@yield('content')
-
+        @include('partials.footer')
     	<script src="/assets/js/vendor/jquery.min.js"></script>
     	<script src="/assets/js/vendor/foundation.min.js"></script>
     	<script src="/assets/js/vendor/foundation.equalizer.js"></script>

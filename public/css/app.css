@@ -6276,6 +6276,9 @@ section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming
 .hero .hero-span-list li {
   font-size: 0.88889rem; }
 
+.quick {
+  background-color: #FFFFFF; }
+
 .top-section {
   border-top: none;
   margin-top: -2.5rem; }
@@ -6302,6 +6305,12 @@ section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming
         border-color: #FFFFFF;
         color: #FFFFFF;
         cursor: default; }
+
+.credits {
+  padding: 1rem 0 0;
+  background-color: rgba(51, 51, 51, 0.2); }
+  .credits a, .credits h2, .credits h3, .credits label, .credits p {
+    color: #FFFFFF; }
 
 .content-hero {
   padding-top: 4rem; }
@@ -6362,7 +6371,8 @@ code, code p {
 
 .content {
   padding-top: 2rem;
-  padding-bottom: 2rem; }
+  padding-bottom: 2rem;
+  background-color: #FFFFFF; }
 
 .break {
   padding: 2rem 1rem; }

@@ -29,7 +29,7 @@
 		</div>
 	</div>
 </section>
-<section class="lesson">
+<section class="lesson content">
 	<div class="row">
 		<div class="small-12 medium-6 columns">
 			<p>{{ $lesson->description }}</p>
