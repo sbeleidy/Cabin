@@ -136,7 +136,7 @@
     <div class="small-12 columns text-center">
       <h2 class="text-center">Why is this just $50?</h2>
       <h3 class="subheader">Because online education is broken and needs to change.</h3>
-      <h3><a href="https://www.makerscabin.com/blog/the-full-stack-web-course/" class="button round large">Read more about the Makers Cabin philosophy...</a></h3>
+      <h3><a href="https://www.makerscabin.com/blog/the-full-stack-web-course/" class="button round large">Read more about the Makers Cabin philosophy <i class="fa fa-arrow-right"></i></a></h3>
     </div>
   </div>
 </section>

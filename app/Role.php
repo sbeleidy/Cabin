@@ -15,4 +15,12 @@ class Role extends Model
     {
     	return $this->permissions()->save($permission);
     }
+
+    /**
+     * Has Many Users
+     */
+    public function users()
+    {
+    	return $this->hasMany('Makercabin\User');
+    }
 }

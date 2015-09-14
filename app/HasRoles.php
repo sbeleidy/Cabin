@@ -3,6 +3,7 @@
 namespace Makerscabin;
 
 trait HasRoles {
+	
 	public function roles()
 	{
 	    return $this->belongsToMany('Makerscabin\Role');

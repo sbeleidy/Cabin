@@ -4,7 +4,7 @@
 <section class="top-section ming content-hero">
 	<div class="row">
 		<div class="small-12 columns">
-			<h2 class="text-center">All of these courses for just one price.</h2>
+			<h2 class="text-center">Gain access to all of these courses for just one price.</h2>
 		</div>
 	</div>
 </section>
