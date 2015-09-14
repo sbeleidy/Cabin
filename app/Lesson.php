@@ -3,9 +3,14 @@
 namespace Makerscabin;
 
 use Illuminate\Database\Eloquent\Model;
+use Makerscabin\Services\Markdowner;
 
 class Lesson extends Model
 {
+	protected $fillable = [
+		'name', 'description', 'github', 'video', 'download', 'length'
+	];
+
     /**
      * BelongsTo Relationship with Sections
      */
@@ -17,5 +22,12 @@ class Lesson extends Model
     public function course()
     {
     	return $this->belongsTo('Makerscabin\Course');
+    }
+
+    public function setDescriptionAttribute($value)
+    {
+    	$markdown = new Markdowner();
+
+    	$this->attributes['description'] = $markdown->toHTML($value);
     }
 }

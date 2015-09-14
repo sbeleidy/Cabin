@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-<section class="hero top-section oil">
+<section class="hero top-section ming">
 	<div class="row">
 		<div class="small-12 columns">
 			<h2>{{ $course->name }}</h2>

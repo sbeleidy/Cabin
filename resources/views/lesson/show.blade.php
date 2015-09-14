@@ -23,7 +23,7 @@
 				@endunless
 				<!--<li><a class="button" href="#"><i class="fa fa-check-circle-o"></i> Complete</a></li>-->
 				<li><a class="button" href="{{ $lesson->download }}"><i class="fa fa-cloud-download"></i> Download</a></li>
-				<li><a class="button" href="#"><i class="fa fa-eye"></i> Watch Later</a></li>
+				<!--<li><a class="button" href="#"><i class="fa fa-eye"></i> Watch Later</a></li>-->
 				<li><a class="button" href="#comments"><i class="fa fa-comments"></i> Comments</a></li>
 			</ul>
 		</div>

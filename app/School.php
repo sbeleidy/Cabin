@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class School extends Model
 {
     protected $fillable = [
-    	'name', 'price',
+    	'name', 'price', 'summary', 'description'
     ];
 
     /**
@@ -18,6 +18,10 @@ class School extends Model
     	return $this->hasMany('Makerscabin\Course');
     }
 
+    /**
+     * Belongs to Many Users
+     * @return Eloquent Users
+     */
     public function users()
     {
         return $this->belongsToMany('Makerscabin\User');

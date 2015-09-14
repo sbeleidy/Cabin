@@ -11,7 +11,7 @@
 <section class="lesson">
 	<div class="row">
 		<div class="small-12 columns">
-			<p>{{ $lesson->description }}</p>
+			{!! $lesson->description !!}
 		</div>
 	</div>
 </section>

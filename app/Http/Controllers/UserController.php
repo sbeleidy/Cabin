@@ -13,4 +13,14 @@ class UserController extends Controller
    	{
    		return view('user.dashboard');
    	}
+
+   	/**
+   	 * Update User Profile
+   	 */
+   	public function update(Request $request, $id)
+   	{
+   		if ($request->user()->cannot('update-profile')) {
+   			abort(403);
+   		}
+   	}
 }

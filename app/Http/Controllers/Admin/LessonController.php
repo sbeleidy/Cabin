@@ -5,8 +5,11 @@ namespace Makerscabin\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 
 use Makerscabin\Http\Requests;
+use Makerscabin\Http\Requests\LessonCreateRequest;
+use Makerscabin\Http\Requests\LessonUpdateRequest;
 use Makerscabin\Http\Controllers\Controller;
 use Makerscabin\Lesson;
+use Makerscabin\Course;
 
 class LessonController extends Controller
 {
@@ -27,7 +30,9 @@ class LessonController extends Controller
      */
     public function create()
     {
-        //
+        $courses = Course::all();
+
+        return view('admin.lesson.create', compact('courses'));
     }
 
     /**
@@ -36,9 +41,23 @@ class LessonController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(LessonCreateRequest $request)
     {
-        //
+        $lesson = new Lesson;
+
+        $lesson->name = $request->name;
+        $lesson->setDescriptionAttribute($request->description);
+        $lesson->github = $request->github;
+        $lesson->video = $request->video;
+        $lesson->download = $request->download;
+        $lesson->length = $request->length;
+        $lesson->course_id = $request->course_id;
+
+        $lesson->save();
+
+        return redirect()
+            ->route('admin.lesson.show', [$lesson->id])
+            ->withSuccess('Lesson successfully creted.');
     }
 
     /**

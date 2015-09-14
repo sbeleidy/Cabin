@@ -6,6 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Course extends Model
 {
+
+    protected $fillable = [
+        'name', 'summary', 'description', 'skill', 'length', 'published'
+    ];
+
     /**
      * Belong To Relationship with School
      */
