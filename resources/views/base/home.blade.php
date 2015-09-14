@@ -88,12 +88,12 @@
     <div class="small-12 columns">
       <h2>Join over 1000+ makers that are learning with Makers Cabin</h2>
       <ul class="logo-list">
-        <li><img alt="Dropbox" title="Dropbox" src="/assets/img/logos/dr.png"></li>
-        <li><img alt="Twitter" title="Twitter" src="/assets/img/logos/tw.png"></li>
-        <li><img alt="Facebook" title="Facebook" src="/assets/img/logos/fa.png"></li>
-        <li><img alt="Instagram" title="Instagram" src="/assets/img/logos/in.png"></li>
-        <li><img alt="YouTube" title="YouTube" src="/assets/img/logos/yo.png"></li>
-        <li><img alt="Github" title="Github" src="/assets/img/logos/gi.png"></li>
+        <li><img src="/assets/img/logos/dr.png"></li>
+        <li><img src="/assets/img/logos/tw.png"></li>
+        <li><img src="/assets/img/logos/fa.png"></li>
+        <li><img src="/assets/img/logos/in.png"></li>
+        <li><img src="/assets/img/logos/yo.png"></li>
+        <li><img src="/assets/img/logos/gi.png"></li>
       </ul>
       <h2><a href="https://courses.makerscabin.com/purchase/module/web" class="button round large">Start Learning Today for Just $50</a></h2>
     </div>
