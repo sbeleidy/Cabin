@@ -36,7 +36,7 @@
         <li><a href="#">Redis</a></li>
       </ul>
       <h3>You will build projects that go over all of these technologies. Don&rsquo;t know what any of these things mean? No worries because you will learn them all soon enough.</h3>
-      <h2><a href="https://courses.makerscabin.com/purchase/module/web" class="button round large">Start Learning Today for Just $50</a></h2>
+      <h2><a href="/register" class="button round large">Start Learning Today for Just $50</a></h2>
     </div>
   </div>
 </section>
@@ -106,7 +106,7 @@
       <div class="course-meta" data-equalizer-watch>
         <h4 class="subheader">{{ $course->skill }} <span class="time right"><i class="fa fa-clock-o"></i> {{ number_format(((int)$course->length / 60) / 60, 2) }} Hours</span></h4>
         <h3><a href="{{ route('course.show', $course->id) }}">{{ $course->name }}</a></h3>
-        <p>{{ substr($course->description, 0, 120) }}...</p>
+        <p>{{ substr($course->summary, 0, 120) }}...</p>
         <p><a href="{{ route('course.show', $course->id) }}">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
       </div>
     </div>

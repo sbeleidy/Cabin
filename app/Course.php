@@ -3,6 +3,7 @@
 namespace Makerscabin;
 
 use Illuminate\Database\Eloquent\Model;
+use Makerscabin\Services\Markdowner;
 
 class Course extends Model
 {
@@ -30,5 +31,12 @@ class Course extends Model
     public function lessons()
     {
         return $this->hasMany('Makerscabin\Lesson');
+    }
+
+    public function setDescriptionAttribute($value)
+    {
+        $markdown = new Markdowner();
+
+        $this->attributes['description'] = $markdown->toHTML($value);
     }
 }

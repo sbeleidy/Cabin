@@ -4,13 +4,28 @@
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
   </ul>
   <div class="top-bar-section">
-    <ul class="left">
-      <li @if (Request::is('course*')) class="active" @endif><a href="/course">Courses</a></li>
-      <li><a href="/mag">Mag</a></li>
-      <li><a href="/blog">Blog</a></li>
-    </ul>
+    @if (Auth::check())
+      <ul class="left">
+        <li class="has-dropdown">
+          <a href="/course">Courses</a>
+          <ul class="dropdown">
+          @foreach ($courses as $course)
+            <li><a href="{{ route('course.show', [$course->id]) }}">{{ $course->name }}</a></li>
+          @endforeach
+          </ul>
+        </li>
+        @if (Request::is('lesson*'))
+        <li class="has-dropdown">
+          <a href="#">Lessons for {{ $lesson->course->name }}</a>
+          <ul class="dropdown">
+          @foreach ($lesson->course->lessons as $navLesson)
+            <li><a href="{{ route('lesson.show', [$navLesson->id]) }}">{{ $navLesson->name }}</a></li>
+          @endforeach
+          </ul>
+        </li>
+        @endif
+      </ul>
       <ul class="right">
-        @if (Auth::check())
         <li class="has-dropdown">
           <a href="/dashboard">Hi, {{ Auth::user()->name }}</a>
           <ul class="dropdown">
@@ -19,16 +34,24 @@
             <li><a href="/logout">Logout</a></li>
           </ul>
         </li>
-        @endif
-        @if (Auth::guest())
-        <li class="has-dropdown">
+      </ul>
+    @endif
+    @if (Auth::guest())
+      <ul class="left">
+        <li @if (Request::is('course*')) class="active" @endif><a href="/course">Courses</a></li>
+        <li><a href="/mag">Mag</a></li>
+        <li><a href="/blog">Blog</a></li>
+      </ul>
+      <ul class="right">
+        <!--<li class="has-dropdown">
           <a href="#">Login</a>
           <ul class="dropdown">
             <li><a href="/login">Full Stack Web Course</a></li>
             <li><a href="https://courses.makerscabin.com/login" class="">Master Series</a></li>
           </ul>
-        </li>
-        @endif
+        </li>-->
+        <li><a href="/login">Login</a></li>
       </ul>
+    @endif
   </div>
 </nav>

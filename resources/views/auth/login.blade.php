@@ -4,6 +4,8 @@
 <section class="auth top-section hero">
 	<div class="row">
 		<div class="small-12 medium-6 medium-offset-3 columns">
+			@include('partials.errors')
+			@include('partials.success')
 			<h2 class="text-center">Login</h2>
 			{!! Form::open(array('url' => 'login', 'class' => 'panel')) !!}
 				{!! Form::label('email', 'Email') !!}

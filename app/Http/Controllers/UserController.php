@@ -23,4 +23,9 @@ class UserController extends Controller
    			abort(403);
    		}
    	}
+
+      public register()
+      {
+         return view('user.register');
+      }
 }

@@ -13,7 +13,7 @@ class CourseCreateRequest extends Request
      */
     public function authorize()
     {
-        return false;
+        return true;
     }
 
     /**
@@ -24,7 +24,11 @@ class CourseCreateRequest extends Request
     public function rules()
     {
         return [
-            //
+            'name'  => 'required',
+            'summary'   => 'required',
+            'description'   => 'required',
+            'length'    => 'required',
+            'school_id' => 'required',
         ];
     }
 }

@@ -12,7 +12,7 @@ class CourseController extends Controller
 {
 	public function index()
 	{
-		$courses = Course::all();
+		$courses = Course::where('published', 1)->get();
 
 		return view('course.index', compact('courses'));
 	}
@@ -20,7 +20,8 @@ class CourseController extends Controller
     public function show($id)
     {
     	$course = Course::findOrFail($id);
+    	$courses = Course::where('published', 1)->get();
 
-    	return view('course.show', compact('course'));
+    	return view('course.show', compact('course', 'courses'));
     }
 }

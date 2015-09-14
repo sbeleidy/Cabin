@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Makerscabin\Http\Requests;
 use Makerscabin\Http\Controllers\Controller;
 use Makerscabin\Course;
+use Makerscabin\Http\Requests\CourseCreateRequest;
 
 class CourseController extends Controller
 {
@@ -27,7 +28,7 @@ class CourseController extends Controller
      */
     public function create()
     {
-        //
+        return view('admin.course.create');
     }
 
     /**
@@ -36,9 +37,23 @@ class CourseController extends Controller
      * @param  Request  $request
      * @return Response
      */
-    public function store(Request $request)
+    public function store(CourseCreateRequest $request)
     {
-        //
+        $course = new Course;
+
+        $course->name = $request->name;
+        $course->summary = $request->summary;
+        $course->setDescriptionAttribute($request->description);
+        $course->skill = $request->skill;
+        $course->length = $request->length;
+        $course->published = $request->published;
+        $course->school_id = $request->school_id;
+
+        $course->save();
+
+        return redirect()
+            ->route('admin.course.show', [$course->id])
+            ->withSuccess('Course successfully creted.');
     }
 
     /**

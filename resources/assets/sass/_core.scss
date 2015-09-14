@@ -20,6 +20,11 @@ section.ming {@include white-text;}
 	background-size: cover;
 }
 
+p.help-block {
+	font-size: rem-calc(14);
+	margin-top: -8px;
+}
+
 .sublime-bg {
 	background-origin: border-box;
 	background-repeat: no-repeat;

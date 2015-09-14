@@ -6236,6 +6236,10 @@ section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming
   background: #333333 url("/assets/img/backgrounds/cabin-oil.png") 50% 0 no-repeat fixed;
   background-size: cover; }
 
+p.help-block {
+  font-size: 0.77778rem;
+  margin-top: -8px; }
+
 .sublime-bg {
   background-origin: border-box;
   background-repeat: no-repeat;

@@ -32,7 +32,7 @@
 <section class="lesson content">
 	<div class="row">
 		<div class="small-12 medium-6 columns">
-			<p>{{ $lesson->description }}</p>
+			{!! $lesson->description !!}
 		</div>
 		<div class="small-12 @unless ( ! $lesson->description ) medium-6 @endunless columns">
 			<table class="lessons" width="100%">

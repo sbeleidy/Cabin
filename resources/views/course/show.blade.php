@@ -14,7 +14,7 @@
 			<div class="panel">
 				<p>{{ $course->summary }}</p>
 			</div>
-			<p>{{ $course->description }}</p>
+			{!! $course->description !!}
 		</div>
 		<div class="small-12 medium-6 columns">
 			<h3>Lessons: {{ count($course->lessons) }}</h3>
