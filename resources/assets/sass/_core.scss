@@ -163,13 +163,18 @@ section.lesson {
 		border-collapse: collapse;
 		border-spacing: 0;
 		tr {
+			th {
+				&.lesson-index, &.lesson-length {
+					text-align: center;
+				}
+			}
 			td {
 				border: 1px solid $gainsboro;
 				padding: 0;
 				a {
 					display:block;
 					padding: 1rem;
-					color: $oil; 
+					color: $ming; 
 					font-weight: 500;
 				}
 				&.lesson-index, &.lesson-length {
