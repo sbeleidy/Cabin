@@ -28,7 +28,8 @@ class CourseController extends Controller
      */
     public function create()
     {
-        return view('admin.course.create');
+        $courses = Course::all();
+        return view('admin.course.create', compact('courses'));
     }
 
     /**
