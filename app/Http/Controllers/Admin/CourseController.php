@@ -66,8 +66,9 @@ class CourseController extends Controller
     public function show($id)
     {
         $course = Course::findOrFail($id);
+        $courses = Course::all();
 
-        return view('admin.course.show', compact('course'));
+        return view('admin.course.show', compact('course', 'courses'));
     }
 
     /**
@@ -78,7 +79,7 @@ class CourseController extends Controller
      */
     public function edit($id)
     {
-        //
+        $courses = Course::all();
     }
 
     /**
@@ -90,7 +91,7 @@ class CourseController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $courses = Course::all();
     }
 
     /**

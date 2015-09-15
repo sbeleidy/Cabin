@@ -19,7 +19,7 @@
 		<div class="small-12 medium-3 columns">
 			<ul class="button-group stacked">
 				@unless ( ! $lesson->github )
-				<li><a class="button" href="{{ $lesson->github }}"><i class="fa fa-github-alt"></i> Github Repo</a></li>
+				<li><a class="button" href="https://github.com/{{ $lesson->github }}"><i class="fa fa-github-alt"></i> Github Repo</a></li>
 				@endunless
 				<!--<li><a class="button" href="#"><i class="fa fa-check-circle-o"></i> Complete</a></li>-->
 				<li><a class="button" href="{{ $lesson->download }}"><i class="fa fa-cloud-download"></i> Download</a></li>
@@ -48,13 +48,13 @@
 			</table>
 		</div>
 		<div class="small-12 columns" id="comments">
-			@if (App::environment() === 'local')
+			@if (App::environment() === 'production')
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">
 			    /* * * CONFIGURATION VARIABLES * * */
-			    var disqus_shortname = 'makersblogdev';
+			    var disqus_shortname = 'makerscabin';
 			    @if (isset($slug))
-			    	var disqus_identifier = 'makersblog-{{ $slug }}';
+			    	var disqus_identifier = 'makerscabin-{{ $slug }}';
 			    @endif
 			    /* * * DON'T EDIT BELOW THIS LINE * * */
 			    (function() {

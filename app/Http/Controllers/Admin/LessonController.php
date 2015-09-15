@@ -69,8 +69,9 @@ class LessonController extends Controller
     public function show($id)
     {
         $lesson = Lesson::findOrFail($id);
+        $courses = Course::all();
 
-        return view('admin.lesson.show', compact('lesson'));
+        return view('admin.lesson.show', compact('lesson', 'courses'));
     }
 
     /**
