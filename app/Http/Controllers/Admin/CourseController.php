@@ -49,6 +49,7 @@ class CourseController extends Controller
         $course->length = $request->length;
         $course->published = $request->published;
         $course->school_id = $request->school_id;
+        $course->video = $request->video;
 
         $course->save();
 

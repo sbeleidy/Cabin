@@ -13,7 +13,7 @@
 
 $factory->define(Makerscabin\User::class, function (Faker\Generator $faker) {
     return [
-        'name' 				=> $faker->firstName()->unique(),
+        'name' 				=> $faker->unique()->firstName(),
         'email' 			=> $faker->email,
         'password' 			=> bcrypt(str_random(10)),
         'remember_token' 	=> str_random(10),
@@ -22,7 +22,7 @@ $factory->define(Makerscabin\User::class, function (Faker\Generator $faker) {
 
 $factory->define(Makerscabin\School::class, function (Faker\Generator $faker) {
 	return [
-		'name' 			=> $faker->word(),
+		'name' 			=> $faker->unique()->sentence(mt_rand(1,2)),
 		'description' 	=> $faker->realText(144),  
 		'summary'		=> $faker->sentence(20),
 	];
@@ -30,13 +30,14 @@ $factory->define(Makerscabin\School::class, function (Faker\Generator $faker) {
 
 $factory->define(Makerscabin\Course::class, function (Faker\Generator $faker) {
 	return [
-		'name'			=> $faker->word(),
+		'name'			=> $faker->unique()->sentence(mt_rand(1,3)),
 		'summary'		=> $faker->sentence(70,144),
 		'description'	=> join("\n\n", $faker->paragraphs(mt_rand(3,10))),
 		'school_id'		=> mt_rand(1,5),
 		'skill'			=> 'BEGINNER',
 		'length'		=> mt_rand(600, 60000),
 		'published'		=> 1,
+		'video'			=> '5pwfamiuit',
 	];
 });
 
@@ -51,7 +52,7 @@ $factory->define(Makerscabin\Section::class, function (Faker\Generator $faker) {
 $factory->define(Makerscabin\Lesson::class, function (Faker\Generator $faker)
 {
 	return [
-		'name' 			=> $faker->word(),
+		'name' 			=> $faker->unique()->sentence(mt_rand(1,3)),
 		'description' 	=> join("\n\n", $faker->paragraphs(mt_rand(3,10))),	
 		'github'		=> 'https://github.com/MakersCabin/Cabin',
 		'video'			=> '5pwfamiuit',

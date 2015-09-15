@@ -11,6 +11,11 @@ class Lesson extends Model
 		'name', 'description', 'github', 'video', 'download', 'length'
 	];
 
+    protected $sluggable = [
+        'build_from'    => 'name',
+        'save_to'       => 'slug',  
+    ];
+
     /**
      * BelongsTo Relationship with Sections
      */

@@ -52,7 +52,7 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // This is the default html and body font-size for the base rem value.
-$base-font-size: 18px;
+$base-font-size: 16px;
 $rem-base: $base-font-size;
 
 // Allows the use of rem-calc() or lower-bound() in your settings
@@ -1408,8 +1408,8 @@ $topbar-link-font-size: rem-calc(14);
 $topbar-link-bg: $ming;
 // $topbar-link-bg-color-hover: $charcoal;
 $topbar-link-bg-hover : $oil;
-$topbar-link-bg-active: darken($ming,10%);
-$topbar-link-bg-active-hover: darken($ming,10%);
+$topbar-link-bg-active: $ming;
+$topbar-link-bg-active-hover: $ming;
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);

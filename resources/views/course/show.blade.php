@@ -4,11 +4,22 @@
 <section class="content-hero top-section oil">
 	<div class="row">
 		<div class="small-12 columns">
-			<h3 class="heading-meta">Last refreshed: {{ \Carbon\Carbon::createFromTimeStamp(strtotime($course->updated_at))->diffForHumans() }}</h3>
+			<h3 class="heading-meta"><i class="fa fa-clock-o"></i> Last refreshed: {{ \Carbon\Carbon::createFromTimeStamp(strtotime($course->updated_at))->diffForHumans() }}</h3>
 			<h2>{{ $course->name }}</h2>
 		</div>
 	</div>
 </section>
+@if ( $course->video )			
+<section class="lesson-video oil">
+	<div class="row">
+		<div class="small-12 columns">
+			<div class="flex-video widescreen">
+				<iframe src="//fast.wistia.net/embed/iframe/{{ $course->video }}?videoFoam=true" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed" name="wistia_embed" allowfullscreen mozallowfullscreen webkitallowfullscreen oallowfullscreen msallowfullscreen width="640" height="360"></iframe><script src="//fast.wistia.net/assets/external/E-v1.js"></script>
+			</div>
+		</div>
+	</div>
+</section>
+@endif
 <section class="lesson content">
 	<div class="row">
 		<div class="small-12 medium-6 columns">

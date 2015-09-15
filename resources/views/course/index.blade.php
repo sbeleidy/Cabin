@@ -10,7 +10,7 @@
 		       	<h4 class="subheader">{{ $course->skill }} <span class="time right"><i class="fa fa-clock-o"></i> {{ number_format(((int)$course->length / 60) / 60, 2) }} Hours</span></h4>
 		       	<h3><a href="{{ route('course.show', $course->id) }}">{{ $course->name }}</a></h3>
 		       	<p>{!! substr($course->summary, 0, 120) !!}...</p>
-		       	<p><a href="{{ route('course.show', $course->id) }}">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
+		       	<p><a href="{{ route('course.show', $course->id) }}">View {{ count($course->lessons) }} lessons <i class="fa fa-long-arrow-right"></i></a></p>
 		       	<p>Last refreshed: {{ \Carbon\Carbon::createFromTimeStamp(strtotime($course->updated_at))->diffForHumans() }}</p>
 		     	</div>
 		   </div>

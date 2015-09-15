@@ -20,6 +20,9 @@
 					<option value="EVERYBODY">EVERYBODY</option>
 				</select>
 
+				{!! Form::label('video', 'Video') !!}
+				{!! Form::text('video', old('video')) !!}
+
 				{!! Form::label('description', 'Description') !!}
 				{!! Form::textarea('description', old('description')) !!}
 

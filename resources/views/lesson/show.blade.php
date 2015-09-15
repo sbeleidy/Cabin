@@ -54,8 +54,8 @@
 			@endforeach
 			</table>
 		</div>
+		@if (App::environment() === 'production')
 		<div class="small-12 columns" id="comments">
-			@if (App::environment() === 'production')
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">
 			    /* * * CONFIGURATION VARIABLES * * */
@@ -71,8 +71,8 @@
 			    })();
 			</script>
 			<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-			@endif
 		</div>
+		@endif
 	</div>
 </section>
 @endsection

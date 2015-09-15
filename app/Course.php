@@ -12,6 +12,11 @@ class Course extends Model
         'name', 'summary', 'description', 'skill', 'length', 'published'
     ];
 
+    protected $sluggable = [
+        'build_from'    => 'name',
+        'save_to'       => 'slug',  
+    ];
+
     /**
      * Belong To Relationship with School
      */
