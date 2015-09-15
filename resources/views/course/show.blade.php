@@ -34,7 +34,7 @@
 					<tr class="table-header">
 						<th class="lesson-index">{{ count($course->lessons) }}</th>
 						<th>Lessons</th>
-						<th class="lesson-length">{{ number_format(((int)$course->length / 60) / 60, 2) }} Hours Total</th>
+						<th class="lesson-length">{{ $course->length }}{{ number_format(((int)$course->length / 60) / 60, 2) }} Hours Total</th>
 					</tr>
 				</thead>
 			<?php $count = 1; ?>
