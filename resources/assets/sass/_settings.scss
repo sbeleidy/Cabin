@@ -817,7 +817,7 @@ $button-radius: $global-radius;
 
 // $include-html-off-canvas-classes: $include-html-classes;
 
-// $tabbar-bg: $oil;
+$tabbar-bg: transparent;
 // $tabbar-height: rem-calc(45);
 // $tabbar-icon-width: $tabbar-height;
 // $tabbar-line-height: $tabbar-height;
@@ -1314,8 +1314,8 @@ $table-row-font-size: rem-calc(16);
 // $include-html-tabs-classes: $include-html-classes;
 
 // $tabs-navigation-padding: rem-calc(16);
-$tabs-navigation-bg-color: $oil;
-$tabs-navigation-active-bg-color: $ming;
+$tabs-navigation-bg-color: transparent;
+$tabs-navigation-active-bg-color: rgba($black, 0.5);
 // $tabs-navigation-hover-bg-color: scale-color($tabs-navigation-bg-color, $lightness: -6%);
 $tabs-navigation-font-color: $white;
 // $tabs-navigation-active-font-color: $tabs-navigation-font-color;
@@ -1376,7 +1376,7 @@ $tabs-content-margin-bottom: rem-calc(0);
 // $include-html-top-bar-classes: $include-html-classes;
 
 // Background color for the top bar
-$topbar-bg-color: transparent;
+$topbar-bg-color: $ming;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
@@ -1399,17 +1399,17 @@ $topbar-dropdown-bg: transparent;
 
 // Set the link colors and styles for top-level nav
 $topbar-link-color: $white;
-$topbar-link-color-hover: rgba($white, 0.5);
+$topbar-link-color-hover: $white;
 $topbar-link-color-active: $topbar-link-color-hover;
 $topbar-link-color-active-hover: $topbar-link-color-hover;
 $topbar-link-weight: $font-weight-normal;
 $topbar-link-font-size: rem-calc(14);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
-$topbar-link-bg: transparent;
+$topbar-link-bg: $ming;
 // $topbar-link-bg-color-hover: $charcoal;
-$topbar-link-bg-hover : transparent;
-$topbar-link-bg-active: transparent;
-$topbar-link-bg-active-hover: transparent;
+$topbar-link-bg-hover : $oil;
+$topbar-link-bg-active: darken($ming,10%);
+$topbar-link-bg-active-hover: darken($ming,10%);
 // $topbar-link-font-family: $body-font-family;
 // $topbar-link-text-transform: none;
 // $topbar-link-padding: ($topbar-height / 3);

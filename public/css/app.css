@@ -4354,17 +4354,17 @@ table {
     .tabs dd > a,
     .tabs .tab-title > a {
       display: block;
-      background-color: #333333;
+      background-color: transparent;
       color: #FFFFFF;
       font-family: "proxima-nova", "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
       font-size: 0.88889rem;
       padding: 0.88889rem 1.77778rem; }
       .tabs dd > a:hover,
       .tabs .tab-title > a:hover {
-        background-color: #303030; }
+        background-color: transparent; }
     .tabs dd.active a,
     .tabs .tab-title.active a {
-      background-color: #336E7B;
+      background-color: rgba(0, 0, 0, 0.5);
       color: #FFFFFF; }
   .tabs.radius dd:first-child a,
   .tabs.radius .tab:first-child a {
@@ -4527,7 +4527,7 @@ meta.foundation-mq-topbar {
 /* Wrapped around .top-bar to contain to grid width */
 .contain-to-grid {
   width: 100%;
-  background: transparent; }
+  background: #336E7B; }
   .contain-to-grid .top-bar {
     margin-bottom: 0; }
 
@@ -4551,7 +4551,7 @@ meta.foundation-mq-topbar {
       z-index: 98; }
 
 .top-bar {
-  background: transparent;
+  background: #336E7B;
   height: 2.5rem;
   line-height: 2.5rem;
   margin-bottom: 0;
@@ -4637,7 +4637,7 @@ meta.foundation-mq-topbar {
     background: transparent;
     height: auto; }
     .top-bar.expanded .title-area {
-      background: transparent; }
+      background: #336E7B; }
     .top-bar.expanded .toggle-topbar a {
       color: #888888; }
       .top-bar.expanded .toggle-topbar a span::after {
@@ -4807,14 +4807,14 @@ meta.foundation-mq-topbar {
           color: #FFFFFF; }
     .top-bar-section ul li:hover:not(.has-form) > a {
       background-color: #555555;
-      color: rgba(255, 255, 255, 0.5);
-      background: transparent; }
+      color: #FFFFFF;
+      background: #333333; }
     .top-bar-section ul li.active > a {
-      background: transparent;
-      color: rgba(255, 255, 255, 0.5); }
+      background: #244e57;
+      color: #FFFFFF; }
       .top-bar-section ul li.active > a:hover {
-        background: transparent;
-        color: rgba(255, 255, 255, 0.5); }
+        background: #244e57;
+        color: #FFFFFF; }
   .top-bar-section .has-form {
     padding: 0.83333rem; }
   .top-bar-section .has-dropdown {
@@ -4895,7 +4895,7 @@ meta.foundation-mq-topbar {
 
 @media only screen and (min-width: 45.063em) {
   .top-bar {
-    background: transparent;
+    background: #336E7B;
     overflow: visible; }
     .top-bar:before, .top-bar:after {
       content: " ";
@@ -4922,7 +4922,7 @@ meta.foundation-mq-topbar {
       position: relative;
       top: 0.47222rem; }
     .top-bar.expanded {
-      background: transparent; }
+      background: #336E7B; }
   .contain-to-grid .top-bar {
     margin-bottom: 0;
     margin: 0 auto;
@@ -4940,23 +4940,23 @@ meta.foundation-mq-topbar {
           display: none; }
     .top-bar-section li.hover > a:not(.button) {
       background-color: #555555;
-      background: transparent;
-      color: rgba(255, 255, 255, 0.5); }
+      background: #333333;
+      color: #FFFFFF; }
     .top-bar-section li:not(.has-form) a:not(.button) {
-      background: transparent;
+      background: #336E7B;
       line-height: 2.5rem;
       padding: 0 0.83333rem; }
       .top-bar-section li:not(.has-form) a:not(.button):hover {
         background-color: #555555;
-        background: transparent; }
+        background: #333333; }
     .top-bar-section li.active:not(.has-form) a:not(.button) {
-      background: transparent;
-      color: rgba(255, 255, 255, 0.5);
+      background: #244e57;
+      color: #FFFFFF;
       line-height: 2.5rem;
       padding: 0 0.83333rem; }
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: transparent;
-        color: rgba(255, 255, 255, 0.5); }
+        background: #244e57;
+        color: #FFFFFF; }
     .top-bar-section .has-dropdown > a {
       padding-right: 1.94444rem !important; }
       .top-bar-section .has-dropdown > a:after {
@@ -5015,7 +5015,7 @@ meta.foundation-mq-topbar {
         color: #FFFFFF; }
       .top-bar-section .dropdown li:not(.has-form):not(.active):hover > a:not(.button) {
         background-color: #555555;
-        color: rgba(255, 255, 255, 0.5);
+        color: #FFFFFF;
         background: #222222; }
       .top-bar-section .dropdown li label {
         background: #333333;
@@ -5032,7 +5032,7 @@ meta.foundation-mq-topbar {
       height: 2.5rem;
       width: 0; }
     .top-bar-section .has-form {
-      background: transparent;
+      background: #336E7B;
       height: 2.5rem;
       padding: 0 0.83333rem; }
     .top-bar-section .right li .dropdown {
@@ -5047,11 +5047,11 @@ meta.foundation-mq-topbar {
         left: 100%; }
   .no-js .top-bar-section ul li:hover > a {
     background-color: #555555;
-    background: transparent;
-    color: rgba(255, 255, 255, 0.5); }
+    background: #333333;
+    color: #FFFFFF; }
   .no-js .top-bar-section ul li:active > a {
-    background: transparent;
-    color: rgba(255, 255, 255, 0.5); }
+    background: #244e57;
+    color: #FFFFFF; }
   .no-js .top-bar-section .has-dropdown:hover > .dropdown {
     position: static !important;
     height: auto;
@@ -5460,7 +5460,7 @@ blockquote p {
 
 .tab-bar {
   -webkit-backface-visibility: hidden;
-  background: #333333;
+  background: transparent;
   color: #FFFFFF;
   height: 2.5rem;
   line-height: 2.5rem;
@@ -5478,7 +5478,7 @@ blockquote p {
   position: absolute;
   top: 0;
   width: 2.5rem;
-  border-right: solid 1px #1a1a1a;
+  border-right: solid 1px transparent;
   left: 0; }
 
 .right-small {
@@ -5486,7 +5486,7 @@ blockquote p {
   position: absolute;
   top: 0;
   width: 2.5rem;
-  border-left: solid 1px #1a1a1a;
+  border-left: solid 1px transparent;
   right: 0; }
 
 .tab-bar-section {
@@ -5596,9 +5596,9 @@ ul.off-canvas-list {
     padding: 0.66667rem;
     transition: background 300ms ease; }
     ul.off-canvas-list li a:hover {
-      background: #242424; }
+      background: transparent; }
     ul.off-canvas-list li a:active {
-      background: #242424; }
+      background: transparent; }
 
 .move-right > .inner-wrap {
   -webkit-transform: translate3d(13.88889rem, 0, 0);
@@ -6320,21 +6320,22 @@ p.help-block {
     color: #FFFFFF; }
 
 .content-hero {
-  padding-top: 4rem; }
+  padding-top: 4rem;
+  padding-bottom: 2rem; }
   .content-hero h2 {
     font-size: 3rem;
     margin: 0;
     line-height: 1;
     color: #FFFFFF; }
   .content-hero h3.heading-meta {
-    margin: 0; }
+    margin: 0;
+    color: rgba(255, 255, 255, 0.75); }
     .content-hero h3.heading-meta a {
       color: rgba(255, 255, 255, 0.75);
       border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
 
 section.lesson-video {
-  background-color: #333333;
-  padding-top: 2rem; }
+  background-color: #333333; }
   section.lesson-video ul.button-group.stacked {
     border-radius: 3px;
     border: 2px solid white; }
@@ -6378,6 +6379,8 @@ section.lesson {
         border-color: #FFFFFF; }
         section.lesson table.lessons tr:hover td a {
           color: #FFFFFF; }
+    section.lesson table.lessons tr.table-header:hover {
+      background-color: inherit; }
     section.lesson table.lessons tr.active {
       background-color: #336E7B;
       color: #FFFFFF; }
@@ -6393,6 +6396,16 @@ code, code p {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #FFFFFF; }
+
+.tabs-content .content {
+  background: transparent;
+  padding: 0; }
+  .tabs-content .content form.panel {
+    border: none;
+    border-radius: 0; }
+  .tabs-content .content .borderless-panel {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5); }
 
 .break {
   padding: 2rem 1rem; }

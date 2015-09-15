@@ -119,6 +119,7 @@ p.help-block {
 
 .content-hero {
 	padding-top: 4rem;
+	padding-bottom: 2rem;
 	h2 {
 		font-size: 3rem;
 		margin: 0;
@@ -127,6 +128,7 @@ p.help-block {
 	}
 	h3.heading-meta {
 		margin: 0;
+		color: rgba($white, 0.75);
 		a {
 			color: rgba($white, 0.75);
 			border-bottom: 1px solid rgba($white, 0.75);
@@ -136,7 +138,6 @@ p.help-block {
 
 section.lesson-video {
 	background-color: $oil;
-	padding-top: 2rem;
 	ul.button-group.stacked {
 		border-radius: $global-radius;
 		border: 2px solid rgba($white, 1);
@@ -196,6 +197,11 @@ section.lesson {
 					}
 				}
 			}
+			&.table-header {
+				&:hover {
+					background-color: inherit;
+				}
+			}
 			&.active {
 				background-color: $ming;
 				color: $white;
@@ -218,6 +224,21 @@ code, code p {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	background-color: $white;
+}
+
+.tabs-content {
+	.content {
+		background: transparent;
+		padding: 0;
+		form.panel {
+			border: none;
+			border-radius: 0;
+		}
+		.borderless-panel {
+			padding: 1rem;
+			background-color: rgba($black, 0.5);
+		}
+	}
 }
 
 .break {

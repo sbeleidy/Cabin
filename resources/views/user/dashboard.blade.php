@@ -11,6 +11,7 @@
 		       	<h3><a href="{{ route('course.show', $course->id) }}">{{ $course->name }}</a></h3>
 		       	<p>{!! substr($course->summary, 0, 120) !!}...</p>
 		       	<p><a href="{{ route('course.show', $course->id) }}">View lessons <i class="fa fa-long-arrow-right"></i></a></p>
+		       	<p>Last refreshed: {{ \Carbon\Carbon::createFromTimeStamp(strtotime($course->updated_at))->diffForHumans() }}</p>
 		     	</div>
 		   </div>
 		@endforeach

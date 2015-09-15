@@ -37,7 +37,7 @@
 		<div class="small-12 @unless ( ! $lesson->description ) medium-6 @endunless columns">
 			<table class="lessons" width="100%">
 				<thead>
-					<tr>
+					<tr class="table-header">
 						<th class="lesson-index">{{ count($lesson->course->lessons) }}</th>
 						<th>Lessons</th>
 						<th class="lesson-length">{{ number_format(((int)$lesson->course->length / 60) / 60, 2) }} Hours Total</th>
@@ -47,7 +47,7 @@
 			@foreach ($lesson->course->lessons as $less)
 				<tr @if ($less->id == $lesson->id) class="active" @endif>
 					<td class="lesson-index"><a href="{{ route('lesson.show', $less->id) }}">{{ $count }}</a></td>
-					<td class="lesson-title"><a href="{{ route('lesson.show', $less->id) }}">{{ $less->name }}</a></td>
+					<td class="lesson-title"><a href="{{ route('lesson.show', $less->id) }}"><i class="fa fa-play-circle"></i> {{ $less->name }}</a></td>
 					<td class="lesson-length"><a href="{{ route('lesson.show', $less->id) }}">{{ gmdate("i:s",$less->length) }}</a></td>
 				</tr>
 				<?php $count++;?>
