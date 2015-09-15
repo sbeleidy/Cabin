@@ -24,6 +24,7 @@
 				{!! Form::label('length', 'Length (seconds)') !!}
 				{!! Form::text('length', old('length')) !!}
 
+				{!! Form::label('course', 'Course') !!}
 				<select name="course_id">
 					@foreach($courses as $course)
 					<option value="{{ $course->id }}">{{ $course->name }}</option>
