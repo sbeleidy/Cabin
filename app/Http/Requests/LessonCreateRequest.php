@@ -25,8 +25,8 @@ class LessonCreateRequest extends Request
     {
         return [
             'name'  => 'required|max:255',
-            'description' => 'required',
-            'github'    => 'required',
+            'description' => '',
+            'github'    => '',
             'video' => 'required|max:255',
             'download'  => 'required|max:255',
             'length'    => 'required',
