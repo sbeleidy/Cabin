@@ -8,6 +8,10 @@ gulp.task("dupefiles", function() {
 		.pipe(gulp.dest("public/assets/js/vendor"));
 	gulp.src("node_modules/foundation-sites/js/foundation/foundation.equalizer.js")
 		.pipe(gulp.dest("public/assets/js/vendor"));
+	gulp.src("node_modules/foundation-sites/js/foundation/foundation.alert.js")
+		.pipe(gulp.dest("public/assets/js/vendor"));
+	gulp.src("node_modules/foundation-sites/js/vendor/modernizr.js")
+		.pipe(gulp.dest("public/assets/js/vendor"));
 });
 /*
  |--------------------------------------------------------------------------

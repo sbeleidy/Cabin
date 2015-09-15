@@ -3,12 +3,7 @@
 @section('content')
 <section class="courses top-section ming content-hero">
 	<div class="row">
-		<div class="small-12 columns">
-			@if (Auth::guest())
-				<h2 class="text-center">Gain access to all of these courses for just one price.</h2>				
-			@endif
-			</h2>
-		</div>
+		@include ('partials.success')
 		@foreach ($courses as $course)
 		<div class="small-12 medium-4 columns">
 		   	<div class="course-meta" data-equalizer-watch>

@@ -9,9 +9,8 @@
         "laravel/framework": "5.1.*",
         "barryvdh/laravel-debugbar": "^2.0",
         "laravelcollective/html": "5.1.*",
-        "omnipay/paypal": "~2.0",
-        "omnipay/stripe": "~2.0",
-        "league/commonmark": "^0.10.0"
+        "league/commonmark": "^0.10.0",
+        "laravel/cashier": "~5.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",

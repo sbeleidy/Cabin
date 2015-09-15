@@ -19,7 +19,7 @@
           <a href="#">Lessons for {{ $lesson->course->name }}</a>
           <ul class="dropdown">
           @foreach ($lesson->course->lessons as $navLesson)
-            <li><a href="{{ route('lesson.show', [$navLesson->id]) }}">{{ $navLesson->name }}</a></li>
+            <li @if ($navLesson->id === $lesson->id) class="active" @endif><a href="{{ route('lesson.show', [$navLesson->id]) }}">{{ $navLesson->name }}</a></li>
           @endforeach
           </ul>
         </li>
@@ -43,13 +43,7 @@
         <li><a href="/blog">Blog</a></li>
       </ul>
       <ul class="right">
-        <!--<li class="has-dropdown">
-          <a href="#">Login</a>
-          <ul class="dropdown">
-            <li><a href="/login">Full Stack Web Course</a></li>
-            <li><a href="https://courses.makerscabin.com/login" class="">Master Series</a></li>
-          </ul>
-        </li>-->
+        <li><a href="/register">Register</a></li>
         <li><a href="/login">Login</a></li>
       </ul>
     @endif

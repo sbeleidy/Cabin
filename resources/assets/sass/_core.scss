@@ -6,8 +6,16 @@ a {
 	transition: 0.2s all linear;
 }
 
-.ming {background: #336E7B url('/assets/img/backgrounds/cabin.png') 50% 0 no-repeat fixed;background-size: cover;}
-section.ming {@include white-text;}
+.ming {
+	background: #336E7B url('/assets/img/backgrounds/cabin.png') 50% 0 no-repeat fixed;
+	background-size: cover;
+}
+section.ming {
+	@include white-text;
+	.panel {
+		background: rgba($black, 0.5);
+	}
+}
 
 .orange-bg {
 	background: $orange url('/assets/img/backgrounds/cabin-orange.png') 50% 0 no-repeat fixed;background-size: cover;

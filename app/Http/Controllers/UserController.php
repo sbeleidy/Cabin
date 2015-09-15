@@ -6,12 +6,15 @@ use Illuminate\Http\Request;
 
 use Makerscabin\Http\Requests;
 use Makerscabin\Http\Controllers\Controller;
+use Auth;
+use Makerscabin\Course;
 
 class UserController extends Controller
 {
    	public function dashboard()
    	{
-   		return view('user.dashboard');
+         $courses = Course::all();
+   		return view('user.dashboard', compact('courses'));
    	}
 
    	/**
@@ -24,8 +27,41 @@ class UserController extends Controller
    		}
    	}
 
-      public register()
+      public function getPurchase()
       {
-         return view('user.register');
+         if ( ! Auth::user() ) return redirect('register');
+
+         $courses = Course::all();
+         return view('user.purchase', compact('courses'));
+      }
+
+      public function postPurchase(Request $request)
+      {
+         $user = Auth::user();
+
+         $response = $user->charge(5000, [
+                        'source' => $request->stripeToken,
+                        'currency' => 'USD',
+                        'receipt_email' => $user->email,
+                        'description'  => 'Full Stack Web School',
+                     ]);
+
+         if ( $response ) {
+
+            $user->assignRole('student');
+
+            return redirect('course')->withSuccess('Thanks for your purchase. Here are your available courses.');
+         }
+
+         return redirect('purchase')->withErrors(['Payment Failed']);
+      }
+
+      public function check()
+      {
+         if ( ! Auth::user()->hasRole('student')) {
+            return redirect('purchase');
+         }
+
+         return redirect('dashboard');
       }
 }

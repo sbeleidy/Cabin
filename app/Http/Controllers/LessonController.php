@@ -20,6 +20,8 @@ class LessonController extends Controller
     			->get();
 
     		return view('lesson.show', compact('lesson', 'courses'));
+    	} else {
+    		return redirect('purchase');
     	}
 
     	return redirect('login')->withErrors('You must be logged in to view this lesson.');

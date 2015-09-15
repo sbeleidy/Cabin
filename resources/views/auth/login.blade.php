@@ -10,8 +10,12 @@
 			{!! Form::open(array('url' => 'login', 'class' => 'panel')) !!}
 				{!! Form::label('email', 'Email') !!}
 				{!! Form::email('email', old('email')) !!}
+
 				{!! Form::label('password', 'Password') !!}
 				{!! Form::password('password') !!}
+
+				{!! Form::checkbox('remember') !!} Remember Me
+				
 				{!! Form::submit('Login', array('class' => 'button radius success expand small')) !!}
 			{!! Form::close() !!}
 		</div>

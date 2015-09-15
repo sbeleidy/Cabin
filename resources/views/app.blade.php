@@ -16,15 +16,18 @@
         <script src="//use.typekit.net/asp8mra.js"></script>
         <script>try{Typekit.load();}catch(e){}</script>
         @yield('styles')
+        @yield('headScripts')
     </head>
     <body class="ming">
     	@include('partials.navbar')
     	@yield('content')
         @include('partials.footer')
+        <script src="/assets/js/vendor/modernizr.js"></script>
     	<script src="/assets/js/vendor/jquery.min.js"></script>
     	<script src="/assets/js/vendor/foundation.min.js"></script>
     	<script src="/assets/js/vendor/foundation.equalizer.js"></script>
-    	@yield('scripts')
+        <script src="/assets/js/vendor/foundation.alert.js"></script>
+    	@yield('footScripts')
     	<script>
     	    $(document).foundation();
     	</script>
