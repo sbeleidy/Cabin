@@ -159,13 +159,24 @@ section.lesson-video {
 section.lesson {
 	padding: 2rem 0;
 	table.lessons {
+		border-radius: $global-radius;
+		border-collapse: collapse;
+		border-spacing: 0;
 		tr {
 			td {
+				border: 1px solid $gainsboro;
 				padding: 0;
 				a {
 					display:block;
 					padding: 1rem;
 					color: $oil; 
+					font-weight: 500;
+				}
+				&.lesson-index, &.lesson-length {
+					text-align: center;
+					a {
+						color: $base;
+					}
 				}
 			}
 			&:hover {
@@ -174,6 +185,7 @@ section.lesson {
 				transition: all 0.2s linear;
 				td {
 					color: $white;
+					border-color: $white;
 					a {
 						color: $white;
 					}

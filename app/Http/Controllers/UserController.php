@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 
 use Makerscabin\Http\Requests;
 use Makerscabin\Http\Controllers\Controller;
+use Makerscabin\Events\SeatWasPurchased;
+use Event;
+use Makerscabin\School;
 use Auth;
 use Makerscabin\Course;
 
@@ -49,6 +52,8 @@ class UserController extends Controller
          if ( $response ) {
 
             $user->assignRole('student');
+
+            Event::fire(new SeatWasPurchased($user));
 
             return redirect('course')->withSuccess('Thanks for your purchase. Here are your available courses.');
          }

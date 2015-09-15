@@ -55,6 +55,11 @@ class LessonController extends Controller
 
         $lesson->save();
 
+        $course = Course::find($lesson->course_id);
+        $course->length = (int)$course->length + (int)$request->length;
+
+        $course->save();
+
         return redirect()
             ->route('admin.lesson.show', [$lesson->id])
             ->withSuccess('Lesson successfully creted.');

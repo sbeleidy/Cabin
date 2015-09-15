@@ -17,14 +17,14 @@
 			{!! $course->description !!}
 		</div>
 		<div class="small-12 medium-6 columns">
-			<h3>Lessons: {{ count($course->lessons) }}</h3>
+			<h3>Lessons: {{ count($course->lessons) }} <span class="right">{{ number_format(((int)$course->length / 60) / 60, 2) }} Hours</span></h3>
 			<table class="lessons" width="100%">
 			<?php $count = 1; ?>
 			@foreach ($course->lessons as $lesson)
 				<tr>
-					<td><a href="{{ route('lesson.show', $lesson->id) }}">{{ $count }}</a></td>
-					<td><a href="{{ route('lesson.show', $lesson->id) }}">{{ $lesson->name }}</a></td>
-					<td><a href="{{ route('lesson.show', $lesson->id) }}">{{ gmdate("i:s",$lesson->length) }}</a></td>
+					<td class="lesson-index"><a href="{{ route('lesson.show', $lesson->id) }}">{{ $count }}</a></td>
+					<td class="lesson-title"><a href="{{ route('lesson.show', $lesson->id) }}">{{ $lesson->name }}</a></td>
+					<td class="lesson-length"><a href="{{ route('lesson.show', $lesson->id) }}">{{ gmdate("i:s",$lesson->length) }}</a></td>
 				</tr>
 			<?php $count++;?>
 			@endforeach

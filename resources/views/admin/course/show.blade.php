@@ -1,28 +1,35 @@
 @extends('app')
 
 @section('content')
-<section class="top-section ming hero">
+<section class="hero top-section ming">
 	<div class="row">
 		<div class="small-12 columns">
 			<h2>{{ $course->name }}</h2>
 		</div>
 	</div>
 </section>
-<section class="content">
+<section class="lesson content">
 	<div class="row">
-		<div class="small-12 columns">
+		<div class="small-12 medium-6 columns">
+			<div class="panel">
+				<p>{{ $course->summary }}</p>
+			</div>
 			{!! $course->description !!}
+		</div>
+		<div class="small-12 medium-6 columns">
+			<h3>Lessons: {{ count($course->lessons) }}</h3>
+			<table class="lessons" width="100%">
+			<?php $count = 1; ?>
+			@foreach ($course->lessons as $lesson)
+				<tr>
+					<td><a href="{{ route('lesson.show', $lesson->id) }}">{{ $count }}</a></td>
+					<td><a href="{{ route('lesson.show', $lesson->id) }}">{{ $lesson->name }}</a></td>
+					<td><a href="{{ route('lesson.show', $lesson->id) }}">{{ gmdate("i:s",$lesson->length) }}</a></td>
+				</tr>
+			<?php $count++;?>
+			@endforeach
+			</table>
 		</div>
 	</div>
 </section>
-<section class="courses">
-	<div class="row">
-	@foreach ($course->sections as $section)
-		<div class="small-12 medium-4 columns">
-			<h3><a href="{{ route('admin.section.show', $section->id) }}">{{ $section->name }}</a></h3>
-			<p>{!! $section->description !!}</p>
-		</div>
-	@endforeach
-	</div>
-</section>	
-@endsection 
+@endsection

@@ -104,15 +104,15 @@ $ghost       : #FAFAFA;
 $snow        : #F9F9F9;
 $vapor       : #F6F6F6;
 // $white-smoke : #F5F5F5;
-// $silver      : #EFEFEF;
+$silver      : #EFEFEF;
 $smoke       : #EEEEEE;
 $gainsboro   : #DDDDDD;
-// $iron        : #CCCCCC;
-// $base        : #AAAAAA;
-// $aluminum    : #999999;
-// $jumbo       : #888888;
+$iron        : #CCCCCC;
+$base        : #AAAAAA;
+$aluminum    : #999999;
+$jumbo       : #888888;
 $monsoon     : #777777;
-// $steel       : #666666;
+$steel       : #666666;
 $charcoal    : #555555;
 // $tuatara     : #444444;
 $oil         : #333333;
@@ -207,7 +207,7 @@ $xxlarge-only: "#{$screen} and (min-width:#{lower-bound($xxlarge-range)}) and (m
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-$header-font-family: $font-family-soft;
+$header-font-family: $font-family-sans-serif;
 $header-font-weight: $font-weight-normal;
 // $header-font-style: normal;
 $header-font-color: $oil;
@@ -1283,11 +1283,11 @@ $reveal-border-color: $white;
 
 // These control the background color for the table and even rows
 $table-bg: $white;
-$table-even-row-bg: $snow;
+$table-even-row-bg: $white;
 
 // These control the table cell border style
 $table-border-style: solid;
-$table-border-size: 1px;
+$table-border-size: 3px;
 $table-border-color: $gainsboro;
 
 // These control the table head styles
@@ -1299,7 +1299,7 @@ $table-border-color: $gainsboro;
 
 // These control the row padding and font styles
 // $table-row-padding: rem-calc(9 10);
-// $table-row-font-size: rem-calc(14);
+$table-row-font-size: rem-calc(16);
 // $table-row-font-color: $jet;
 // $table-line-height: rem-calc(18);
 
