@@ -10,7 +10,7 @@
           <a href="/course">Courses</a>
           <ul class="dropdown">
           @foreach ($courses as $course)
-            <li><a href="{{ route('course.show', [$course->id]) }}">{{ $course->name }}</a></li>
+            <li><a href="{{ route('course.show', [$course->slug]) }}">{{ $course->name }}</a></li>
           @endforeach
           </ul>
         </li>
@@ -19,7 +19,7 @@
           <a href="#">Lessons for {{ $lesson->course->name }}</a>
           <ul class="dropdown">
           @foreach ($lesson->course->lessons as $navLesson)
-            <li @if ($navLesson->id === $lesson->id) class="active" @endif><a href="{{ route('lesson.show', [$navLesson->id]) }}">{{ $navLesson->name }}</a></li>
+            <li @if ($navLesson->id === $lesson->id) class="active" @endif><a href="{{ route('lesson.show', [$navLesson->slug]) }}">{{ $navLesson->name }}</a></li>
           @endforeach
           </ul>
         </li>

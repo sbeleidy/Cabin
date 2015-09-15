@@ -4,9 +4,14 @@ namespace Makerscabin;
 
 use Illuminate\Database\Eloquent\Model;
 use Makerscabin\Services\Markdowner;
+use Cviebrock\EloquentSluggable\SluggableInterface;
+use Cviebrock\EloquentSluggable\SluggableTrait;
 
-class Lesson extends Model
+class Lesson extends Model implements SluggableInterface
 {
+
+    use SluggableTrait;
+
 	protected $fillable = [
 		'name', 'description', 'github', 'video', 'download', 'length'
 	];

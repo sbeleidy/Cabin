@@ -30,7 +30,7 @@ $factory->define(Makerscabin\School::class, function (Faker\Generator $faker) {
 
 $factory->define(Makerscabin\Course::class, function (Faker\Generator $faker) {
 	return [
-		'name'			=> $faker->unique()->sentence(mt_rand(1,3)),
+		'name'			=> $faker->sentence(mt_rand(1,3)),
 		'summary'		=> $faker->sentence(70,144),
 		'description'	=> join("\n\n", $faker->paragraphs(mt_rand(3,10))),
 		'school_id'		=> mt_rand(1,5),
@@ -52,7 +52,7 @@ $factory->define(Makerscabin\Section::class, function (Faker\Generator $faker) {
 $factory->define(Makerscabin\Lesson::class, function (Faker\Generator $faker)
 {
 	return [
-		'name' 			=> $faker->unique()->sentence(mt_rand(1,3)),
+		'name' 			=> $faker->sentence(mt_rand(1,3)),
 		'description' 	=> join("\n\n", $faker->paragraphs(mt_rand(3,10))),	
 		'github'		=> 'https://github.com/MakersCabin/Cabin',
 		'video'			=> '5pwfamiuit',

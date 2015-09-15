@@ -40,9 +40,9 @@
 			<?php $count = 1; ?>
 			@foreach ($course->lessons as $lesson)
 				<tr>
-					<td class="lesson-index"><a href="{{ route('lesson.show', $lesson->id) }}">{{ $count }}</a></td>
-					<td class="lesson-title"><a href="{{ route('lesson.show', $lesson->id) }}"><i class="fa fa-play-circle"></i> {{ $lesson->name }}</a></td>
-					<td class="lesson-length"><a href="{{ route('lesson.show', $lesson->id) }}">{{ gmdate("i:s",$lesson->length) }}</a></td>
+					<td class="lesson-index"><a href="{{ route('lesson.show', $lesson->slug) }}">{{ $count }}</a></td>
+					<td class="lesson-title"><a href="{{ route('lesson.show', $lesson->slug) }}"><i class="fa fa-play-circle"></i> {{ $lesson->name }}</a></td>
+					<td class="lesson-length"><a href="{{ route('lesson.show', $lesson->slug) }}">{{ gmdate("i:s",$lesson->length) }}</a></td>
 				</tr>
 			<?php $count++;?>
 			@endforeach

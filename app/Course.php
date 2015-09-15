@@ -4,9 +4,13 @@ namespace Makerscabin;
 
 use Illuminate\Database\Eloquent\Model;
 use Makerscabin\Services\Markdowner;
+use Cviebrock\EloquentSluggable\SluggableInterface;
+use Cviebrock\EloquentSluggable\SluggableTrait;
 
-class Course extends Model
+class Course extends Model implements SluggableInterface
 {
+
+    use SluggableTrait;
 
     protected $fillable = [
         'name', 'summary', 'description', 'skill', 'length', 'published'

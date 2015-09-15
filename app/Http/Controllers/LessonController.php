@@ -12,10 +12,10 @@ use Makerscabin\Course;
 
 class LessonController extends Controller
 {
-    public function show(Request $request, $id)
+    public function show(Request $request, $slug)
     {
 		if ($request->user() AND $request->user()->hasRole('student')) {
-    		$lesson = Lesson::findOrFail($id);
+    		$lesson = Lesson::where('slug',$slug)->firstOrFail();
     		$courses = Course::where('published', 1)
     			->get();
 

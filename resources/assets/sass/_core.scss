@@ -131,7 +131,8 @@ p.help-block {
 		color: rgba($white, 0.75);
 		a {
 			color: rgba($white, 0.75);
-			border-bottom: 1px solid rgba($white, 0.75);
+			//border-bottom: 1px solid rgba($white, 0.75);
+			font-weight: 100;
 		}
 	}
 }

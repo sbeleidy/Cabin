@@ -17,9 +17,9 @@ class CourseController extends Controller
 		return view('course.index', compact('courses'));
 	}
 	
-    public function show($id)
+    public function show($slug)
     {
-    	$course = Course::findOrFail($id);
+    	$course = Course::where('slug', $slug)->firstOrFail();
     	$courses = Course::where('published', 1)->get();
 
     	return view('course.show', compact('course', 'courses'));

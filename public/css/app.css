@@ -6332,7 +6332,7 @@ p.help-block {
     color: rgba(255, 255, 255, 0.75); }
     .content-hero h3.heading-meta a {
       color: rgba(255, 255, 255, 0.75);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.75); }
+      font-weight: 100; }
 
 section.lesson-video {
   background-color: #333333; }
