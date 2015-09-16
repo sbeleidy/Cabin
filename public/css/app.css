@@ -6286,10 +6286,6 @@ p.help-block {
 .quick {
   background-color: #FFFFFF; }
 
-.top-section {
-  border-top: none;
-  margin-top: -2.8125rem; }
-
 .course-list {
   margin-left: 0.05rem;
   margin-top: 2rem; }
@@ -6320,7 +6316,7 @@ p.help-block {
     color: #FFFFFF; }
 
 .content-hero {
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-bottom: 2rem; }
   .content-hero h2 {
     font-size: 3rem;
@@ -6329,10 +6325,10 @@ p.help-block {
     color: #FFFFFF; }
   .content-hero h3.heading-meta {
     margin: 0;
-    color: rgba(255, 255, 255, 0.75); }
+    color: rgba(255, 255, 255, 0.75);
+    font-weight: 100; }
     .content-hero h3.heading-meta a {
-      color: rgba(255, 255, 255, 0.75);
-      font-weight: 100; }
+      color: rgba(255, 255, 255, 0.75); }
 
 section.lesson-video {
   background-color: #333333; }

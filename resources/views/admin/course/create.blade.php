@@ -33,9 +33,9 @@
 				
 				{!! Form::label('Published') !!}
 				{!! Form::radio('published', '0') !!} No
-				{!! Form::radio('published', '1') !!} Yes
+				{!! Form::radio('published', '1', true) !!} Yes
 
-				{!! Form::submit('Create Lesson', array('class' => 'button small expand radius')) !!}
+				{!! Form::submit('Create Course', array('class' => 'button small expand radius')) !!}
 			{!! Form::close() !!}
 		</div>
 	</div>

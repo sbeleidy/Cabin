@@ -16,9 +16,9 @@ Route::get('course', 'CourseController@index');
 
 Route::get('dashboard', 'UserController@dashboard');
 
-Route::get('course/show/{id}', ['as' => 'course.show', 'uses' => 'CourseController@show']);
+Route::get('course/{slug}', ['as' => 'course.show', 'uses' => 'CourseController@show']);
 
-Route::get('lesson/show/{slug}', ['as' => 'lesson.show', 'uses' => 'LessonController@show']);
+Route::get('course/{courseSlug}/lesson/{slug}', ['as' => 'lesson.show', 'uses' => 'LessonController@show']);
 
 Route::group(['prefix' => 'admin'], function () {
 	Route::resource('school', 'Admin\SchoolController');

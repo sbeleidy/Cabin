@@ -77,11 +77,6 @@ p.help-block {
 	background-color: $white;
 }
 
-.top-section {
-	border-top: none;
-	margin-top: rem-calc(-45);
-}
-
 .course-list {
 	margin-left: 0.05rem;
 	margin-top: 2rem;
@@ -118,7 +113,7 @@ p.help-block {
 }
 
 .content-hero {
-	padding-top: 4rem;
+	padding-top: 2rem;
 	padding-bottom: 2rem;
 	h2 {
 		font-size: 3rem;
@@ -129,10 +124,9 @@ p.help-block {
 	h3.heading-meta {
 		margin: 0;
 		color: rgba($white, 0.75);
+		font-weight: 100;
 		a {
 			color: rgba($white, 0.75);
-			//border-bottom: 1px solid rgba($white, 0.75);
-			font-weight: 100;
 		}
 	}
 }
