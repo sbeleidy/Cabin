@@ -6225,8 +6225,14 @@ a {
 section.ming h1, section.ming h2, section.ming h3, section.ming h4, section.ming a, section.ming p, section.ming label, section.ming li {
   color: #FFFFFF; }
 
+section.ming p a {
+  border-bottom: 1px solid #FFFFFF; }
+
 section.ming .panel {
-  background: rgba(0, 0, 0, 0.5); }
+  background: rgba(0, 0, 0, 0.5);
+  color: #FFFFFF; }
+  section.ming .panel p, section.ming .panel label {
+    color: #FFFFFF; }
 
 .orange-bg {
   background: #F08A24 url("/assets/img/backgrounds/cabin-orange.png") 50% 0 no-repeat fixed;

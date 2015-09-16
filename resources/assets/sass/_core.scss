@@ -12,8 +12,11 @@ a {
 }
 section.ming {
 	@include white-text;
+	p a { border-bottom: 1px solid $white; }
 	.panel {
 		background: rgba($black, 0.5);
+		color: $white;
+		p, label { color: $white; }
 	}
 }
 
