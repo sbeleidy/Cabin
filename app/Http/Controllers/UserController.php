@@ -14,11 +14,14 @@ use Makerscabin\Course;
 
 class UserController extends Controller
 {
-   	public function dashboard()
-   	{
-         $courses = Course::all();
-   		return view('user.dashboard', compact('courses'));
-   	}
+   	public function dashboard(Request $request)
+      {
+         $sorter = empty($request->input('sortBy')) ? 'skill' : $request->input('sortBy');
+         $orderer = empty($request->input('order')) ? 'asc' : $request->input('order');
+
+         $courses = $orderer == 'desc' ? Course::all()->sortByDesc($sorter) : Course::all()->sortBy($sorter);
+         return view('user.dashboard', compact('courses', 'request'));
+      }
 
    	/**
    	 * Update User Profile
