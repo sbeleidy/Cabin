@@ -15,8 +15,9 @@
           </ul>
         </li>
         @if (Auth::user()->hasRole('admin'))
-        <li><a href="/admin/course/create">Create Course</a></li>
-        <li><a href="/admin/lesson/create">Create Lesson</a></li>
+        <li><a href="{{ route('admin.course.create') }}">Create Course</a></li>
+        <li><a href="{{ route('admin.lesson.create') }}">Create Lesson</a></li>
+        <li><a href="{{ route('admin.post.create') }}">Create Post</a></li>
         @endif
         @if (Request::is('lesson*'))
         <li class="has-dropdown">

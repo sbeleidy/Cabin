@@ -11,13 +11,15 @@ use Event;
 use Makerscabin\School;
 use Auth;
 use Makerscabin\Course;
+use Makerscabin\Post;
 
 class UserController extends Controller
 {
    	public function dashboard()
    	{
          $courses = Course::all();
-   		return view('user.dashboard', compact('courses'));
+         $posts = Post::all();
+   		return view('user.dashboard', compact('courses', 'posts'));
    	}
 
    	/**

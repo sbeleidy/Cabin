@@ -6234,6 +6234,9 @@ section.ming .panel {
   section.ming .panel p, section.ming .panel label {
     color: #FFFFFF; }
 
+section.ming .content p, section.ming .content h2, section.ming .content h3, section.ming .content h4 {
+  color: #222222; }
+
 .orange-bg {
   background: #F08A24 url("/assets/img/backgrounds/cabin-orange.png") 50% 0 no-repeat fixed;
   background-size: cover;
@@ -6398,6 +6401,8 @@ code, code p {
   padding-top: 2rem;
   padding-bottom: 2rem;
   background-color: #FFFFFF; }
+  .content p, .content h2, .content h3 {
+    color: #222222; }
 
 .tabs-content .content {
   background: transparent;

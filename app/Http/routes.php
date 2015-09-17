@@ -20,11 +20,12 @@ Route::get('course/{slug}', ['as' => 'course.show', 'uses' => 'CourseController@
 
 Route::get('course/{courseSlug}/lesson/{slug}', ['as' => 'lesson.show', 'uses' => 'LessonController@show']);
 
-Route::group(['prefix' => 'admin'], function () {
+Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function () {
 	Route::resource('school', 'Admin\SchoolController');
 	Route::resource('course', 'Admin\CourseController');
 	Route::resource('section', 'Admin\SectionController');
 	Route::resource('lesson', 'Admin\LessonController');
+	Route::resource('post', 'Admin\PostController');
 });
 
 // Authentication routes...

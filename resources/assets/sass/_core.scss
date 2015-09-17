@@ -18,6 +18,11 @@ section.ming {
 		color: $white;
 		p, label { color: $white; }
 	}
+	.content {
+		p, h2, h3, h4 {
+			color: $jet;
+		}
+	}
 }
 
 .orange-bg {
@@ -222,6 +227,9 @@ code, code p {
 	padding-top: 2rem;
 	padding-bottom: 2rem;
 	background-color: $white;
+	p, h2, h3 {
+		color: $jet;
+	}
 }
 
 .tabs-content {
