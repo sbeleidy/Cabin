@@ -1,6 +1,6 @@
 <nav class="top-bar" data-topbar>
   <ul class="title-area">
-      <li class="name"><h1><a href="/"><img width="25" src="/assets/img/logos/white.png"></a></h1></li>
+      <li class="name"><h1><a @if (Auth::check()) href="/dashboard" @else href="/" @endif><img width="25" src="/assets/img/logos/white.png"></a></h1></li>
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
   </ul>
   <div class="top-bar-section">

@@ -59,10 +59,8 @@
 			<div id="disqus_thread"></div>
 			<script type="text/javascript">
 			    /* * * CONFIGURATION VARIABLES * * */
-			    var disqus_shortname = 'makerscabin';
-			    @if (isset($slug))
-			    	var disqus_identifier = 'makerscabin-{{ $slug }}';
-			    @endif
+			    var disqus_shortname = 'fullstackschool';
+			    
 			    /* * * DON'T EDIT BELOW THIS LINE * * */
 			    (function() {
 			        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
