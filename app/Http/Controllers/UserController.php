@@ -11,27 +11,32 @@ use Event;
 use Makerscabin\School;
 use Auth;
 use Makerscabin\Course;
+use Makerscabin\Post;
 
 class UserController extends Controller
 {
-   	public function dashboard(Request $request)
+      public function dashboard(Request $request)
       {
+         // Get sorted courses
          $sorter = empty($request->input('sortBy')) ? 'skill' : $request->input('sortBy');
          $orderer = empty($request->input('order')) ? 'asc' : $request->input('order');
 
          $courses = $orderer == 'desc' ? Course::all()->sortByDesc($sorter) : Course::all()->sortBy($sorter);
-         return view('user.dashboard', compact('courses', 'request'));
+
+         // Get all posts
+         $posts = Post::all();
+         return view('user.dashboard', compact('courses', 'posts', 'request'));
       }
 
-   	/**
-   	 * Update User Profile
-   	 */
-   	public function update(Request $request, $id)
-   	{
-   		if ($request->user()->cannot('update-profile')) {
-   			abort(403);
-   		}
-   	}
+      /**
+       * Update User Profile
+       */
+      public function update(Request $request, $id)
+      {
+         if ($request->user()->cannot('update-profile')) {
+            abort(403);
+         }
+      }
 
       public function getPurchase()
       {
