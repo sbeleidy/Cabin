@@ -29,5 +29,6 @@ class Kernel extends HttpKernel
         'auth' => \Makerscabin\Http\Middleware\Authenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'guest' => \Makerscabin\Http\Middleware\RedirectIfAuthenticated::class,
+        'admin' => \Makerscabin\Http\Middleware\AdminAuthenticate::class,
     ];
 }

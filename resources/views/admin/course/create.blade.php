@@ -1,7 +1,7 @@
 @extends('app')
 
 @section('content')
-<section class="hero top-section ming">
+<section class="admin ming">
 	<div class="row">
 		<div class="small-12 medium-6 medium-offset-3 columns">
 			<h2 class="text-center">Create Course</h2>
